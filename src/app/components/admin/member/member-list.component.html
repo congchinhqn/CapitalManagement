@@ -1,0 +1,14 @@
+﻿<div class="row">
+    <div class="col-sm-12 col-lg-12 col-xl-12">
+        <div class="card">
+            <div class="card-header">
+                <strong>Danh sách thành viên</strong>
+            </div>
+            <div class="card-block">
+                <gridview #grid [entity]="entityType" [useCheckbox]="false" [filters]="filters" 
+                          (actionEvent)="onActionEvent($event)" 
+                          (loadDataEvent)="onLoadDataEvent($event)"></gridview>
+            </div>
+        </div>
+    </div>
+</div>

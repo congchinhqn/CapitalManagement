@@ -1,0 +1,12 @@
+﻿<ul class="pagination" *ngIf="pager.pages && pager.pages.length">
+    <li class="page-item" [ngStyle]="{'display': pager.currentPage === 1 ? 'none' : 'block'}" (click)="setPage(pager.currentPage - 1)">
+        <a class="page-link" href="#">Trước</a>
+    </li>
+    <template ngFor let-page [ngForOf]="pager.pages">
+        <li *ngIf="pager.currentPage === page" class="page-item active"><a class="page-link" (click)="setPage(page)">{{page}}</a></li>
+        <li *ngIf="pager.currentPage !== page" class="page-item"><a class="page-link" (click)="setPage(page)">{{page}}</a></li>
+    </template>
+    <li class="page-item" [ngStyle]="{'display': pager.currentPage === pager.totalPages ? 'none' : 'block'}" (click)="setPage(pager.currentPage + 1)">
+        <a class="page-link" href="#">Next</a>
+    </li>
+</ul>

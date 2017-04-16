@@ -1,0 +1,23 @@
+<header class="app-header navbar">
+    <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">&#9776;</button>
+    <a class="navbar-brand" href="javasript:void(0)"></a>
+
+    <ul class="nav navbar-nav hidden-md-down">
+        <li class="nav-item">
+            <a class="nav-link navbar-toggler sidebar-toggler" href="javasript:void(0)">&#9776;</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown" dropdown (onToggle)="toggled($event)">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javasript:void(0)" role="button" aria-haspopup="true" aria-expanded="false"
+                dropdownToggle>
+                <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="hidden-md-down">admin</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" dropdownMenu aria-labelledby="simple-dropdown">
+                <a class="dropdown-item" href="javasript:void(0)"><i class="fa fa-shield"></i> Lock account</a>
+                <a class="dropdown-item" href="javasript:void(0)"><i class="fa fa-lock"></i> Logout</a>
+            </div>
+        </li>
+    </ul>
+</header>

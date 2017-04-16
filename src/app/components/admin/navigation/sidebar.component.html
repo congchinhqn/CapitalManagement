@@ -1,0 +1,17 @@
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard</a>
+            </li>
+            <li class="nav-item nav-dropdown" routerLinkActive="open">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Quản Lý</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" [routerLink]="['/members']"><i class="icon-puzzle"></i> Thành Viên</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>

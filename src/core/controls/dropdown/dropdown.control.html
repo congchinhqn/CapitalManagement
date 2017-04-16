@@ -1,0 +1,8 @@
+﻿<select [id]="id" class="select2_single form-control"
+        [(ngModel)]="value" (ngModelChange)="selectedItem()"
+        [disabled]="disabled">
+    <option value="" disabled selected>{{itemDefault}}</option>
+    <template ngFor let-item [ngForOf]="sources">
+        <option [value]="item.code" [attr.selected]="item.seleted ? true : null">{{item.name}}</option>
+    </template>
+</select>

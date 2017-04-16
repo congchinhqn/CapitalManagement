@@ -1,0 +1,54 @@
+﻿<div class="row">
+    <div class="col-sm-12 col-lg-12 col-xl-12">
+        <loading [loading]="loading">
+            <form [formGroup]="addOrEditForm" (ngSubmit)="onSubmitCustom($event)">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>{{ entityId != null ? 'Cập Nhật Thông Tin Thành Viên' : 'Thêm Mới Thông Tin Thành Viên'}}</strong>
+                        <button class="btn btn-default pull-right" type="button" (click)="onCancel()">Hủy Bỏ</button>
+                        <button class="btn btn-primary pull-right" type="submit" [disabled]="!addOrEditForm.valid">Lưu</button>
+                    </div>
+                    <div class="card-block">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="name">Họ & Tên</label>
+                                    <input type="text" class="form-control" id="name" formControlName="Name" [(ngModel)]="entity.Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6 col-lg-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" formControlName="Email" [(ngModel)]="entity.Email">
+                            </div>
+                            <div class="form-group col-sm-6 col-lg-6">
+                                <label for="phone">Điện Thoại</label>
+                                <input type="text" class="form-control" id="phone" formControlName="Phone" [(ngModel)]="entity.Phone">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="name">Địa Chỉ</label>
+                                    <input type="text" class="form-control" id="name" formControlName="Address" [(ngModel)]="entity.Address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6 col-lg-6">
+                                <label for="original-amount">Tiền Khởi Đầu</label>
+                                <input type="number" class="form-control" id="original-amount" formControlName="OriginalAmount" [(ngModel)]="entity.OriginalAmount">
+                            </div>
+                            <div class="form-group col-sm-6 col-lg-6">
+                                <label for="refund-amount">Tiền Hoàn Trả</label>
+                                <input type="number" class="form-control" id="refund-amount" formControlName="RefundAmount" [(ngModel)]="entity.RefundAmount">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </loading>
+    </div>
+</div>
