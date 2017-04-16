@@ -8,7 +8,9 @@ import {
     NotificationService, CustomValidators, WEBAPISERVICE
 } from './../../index';
 
-@Component({})
+@Component({
+    template:''
+})
 export class AddOrEditComponent implements IAddOrEditComponent, AfterViewInit, OnInit {
 
     addOrEditForm: FormGroup;

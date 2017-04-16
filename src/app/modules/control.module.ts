@@ -9,7 +9,7 @@ import { ShareModule } from './share.module';
 import {
     LoadingControl, GridViewControl, PaginatorControl,
     SwitchesControl, DropdownControl, DatepickerControl,
-    BreadcrumbsComponent
+    BreadcrumbsComponent, DropdownCodeControl
 } from './../../core/index';
 
 @NgModule({
@@ -20,12 +20,12 @@ import {
     declarations: [
         LoadingControl, GridViewControl, PaginatorControl,
         SwitchesControl, DropdownControl, DatepickerControl,
-        BreadcrumbsComponent
+        BreadcrumbsComponent, DropdownCodeControl
     ],
     exports: [
         LoadingControl, GridViewControl, PaginatorControl,
         SwitchesControl, DropdownControl, DatepickerControl,
-        BreadcrumbsComponent
+        BreadcrumbsComponent, DropdownCodeControl
     ]
 })
 

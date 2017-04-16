@@ -17,6 +17,8 @@ import {
     AdminComponent, SidebarComponent, HeaderComponent, FooterComponent
 } from './../components/index';
 
+import { AddOrEditComponent } from './../../core/components/index';
+
 import {
     AlertControl,
     LANGUAGE, WEBAPI, LOCALAPI, WEBAPISERVICE,
@@ -47,7 +49,7 @@ var firebaseConfig = {
         DomHandler, StateEventService, NotificationService, DatePipe
     ],
     declarations: [
-        AppComponent, AlertControl,
+        AppComponent, AlertControl, AddOrEditComponent,
         AdminComponent, SidebarComponent, HeaderComponent, FooterComponent
     ],
     bootstrap: [AppComponent]
