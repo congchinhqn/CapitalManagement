@@ -315,12 +315,12 @@ ControlModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_5__core_index__["LoadingControl"], __WEBPACK_IMPORTED_MODULE_5__core_index__["GridViewControl"], __WEBPACK_IMPORTED_MODULE_5__core_index__["PaginatorControl"],
             __WEBPACK_IMPORTED_MODULE_5__core_index__["SwitchesControl"], __WEBPACK_IMPORTED_MODULE_5__core_index__["DropdownControl"], __WEBPACK_IMPORTED_MODULE_5__core_index__["DatepickerControl"],
-            __WEBPACK_IMPORTED_MODULE_5__core_index__["BreadcrumbsComponent"], __WEBPACK_IMPORTED_MODULE_5__core_index__["DropdownCodeControl"]
+            __WEBPACK_IMPORTED_MODULE_5__core_index__["BreadcrumbsComponent"]
         ],
         exports: [
             __WEBPACK_IMPORTED_MODULE_5__core_index__["LoadingControl"], __WEBPACK_IMPORTED_MODULE_5__core_index__["GridViewControl"], __WEBPACK_IMPORTED_MODULE_5__core_index__["PaginatorControl"],
             __WEBPACK_IMPORTED_MODULE_5__core_index__["SwitchesControl"], __WEBPACK_IMPORTED_MODULE_5__core_index__["DropdownControl"], __WEBPACK_IMPORTED_MODULE_5__core_index__["DatepickerControl"],
-            __WEBPACK_IMPORTED_MODULE_5__core_index__["BreadcrumbsComponent"], __WEBPACK_IMPORTED_MODULE_5__core_index__["DropdownCodeControl"]
+            __WEBPACK_IMPORTED_MODULE_5__core_index__["BreadcrumbsComponent"]
         ]
     })
 ], ControlModule);
@@ -491,7 +491,6 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "DropdownControl", function() { return __WEBPACK_IMPORTED_MODULE_2__controls_index__["f"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "DatepickerControl", function() { return __WEBPACK_IMPORTED_MODULE_2__controls_index__["g"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "BreadcrumbsComponent", function() { return __WEBPACK_IMPORTED_MODULE_2__controls_index__["h"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "DropdownCodeControl", function() { return __WEBPACK_IMPORTED_MODULE_2__controls_index__["i"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_index__ = __webpack_require__(128);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "LocalApiServices", function() { return __WEBPACK_IMPORTED_MODULE_3__services_index__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "DomHandler", function() { return __WEBPACK_IMPORTED_MODULE_3__services_index__["b"]; });
@@ -2012,7 +2011,7 @@ var DatepickerControl_1, _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__interfaces_index__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_index__ = __webpack_require__(128);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DropdownCodeControl; });
+/* unused harmony export DropdownCodeControl */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2485,7 +2484,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown_dropdown_control__ = __webpack_require__(592);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__dropdown_dropdown_control__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown_dropdown_code_control__ = __webpack_require__(591);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_6__dropdown_dropdown_code_control__["a"]; });
+/* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__switches_switches_control__ = __webpack_require__(597);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_7__switches_switches_control__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__datepicker_datepicker_control__ = __webpack_require__(590);
@@ -3455,7 +3454,7 @@ let LocalApiServices = class LocalApiServices {
             var totalCount = yield that.fbService.database.list(url);
             let data = yield that.fbService.database.list(url, {
                 query: {
-                    limitToFirst: (pageIndex - 1) * 10,
+                    limitToFirst: (pageIndex - 1) ? (pageIndex - 1) * 10 : 1,
                     limitToLast: 10,
                 }
             });
@@ -4113,7 +4112,7 @@ const range = (range) => {
 
 "use strict";
 const environment = {
-    production: true
+    production: false
 };
 /* harmony export (immutable) */ __webpack_exports__["a"] = environment;
 
