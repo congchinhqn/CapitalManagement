@@ -3,7 +3,7 @@ webpackJsonp([1,5],{
 /***/ 1098:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(459);
+module.exports = __webpack_require__(457);
 
 
 /***/ }),
@@ -12,7 +12,7 @@ module.exports = __webpack_require__(459);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__ = __webpack_require__(609);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__ = __webpack_require__(608);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__, "ResultStatus")) __webpack_require__.d(__webpack_exports__, "ResultStatus", function() { return __WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__["ResultStatus"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__, "IWebApiServices")) __webpack_require__.d(__webpack_exports__, "IWebApiServices", function() { return __WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__["IWebApiServices"]; });
@@ -21,7 +21,7 @@ module.exports = __webpack_require__(459);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__, "ButtonLocation")) __webpack_require__.d(__webpack_exports__, "ButtonLocation", function() { return __WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__["ButtonLocation"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__, "SortingType")) __webpack_require__.d(__webpack_exports__, "SortingType", function() { return __WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__["SortingType"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__, "ButtonActionType")) __webpack_require__.d(__webpack_exports__, "ButtonActionType", function() { return __WEBPACK_IMPORTED_MODULE_0__from_add_or_edit_entity_interface__["ButtonActionType"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__ = __webpack_require__(604);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__ = __webpack_require__(603);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__, "ResultStatus")) __webpack_require__.d(__webpack_exports__, "ResultStatus", function() { return __WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__["ResultStatus"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__, "IWebApiServices")) __webpack_require__.d(__webpack_exports__, "IWebApiServices", function() { return __WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__["IWebApiServices"]; });
@@ -30,7 +30,7 @@ module.exports = __webpack_require__(459);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__, "ButtonLocation")) __webpack_require__.d(__webpack_exports__, "ButtonLocation", function() { return __WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__["ButtonLocation"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__, "SortingType")) __webpack_require__.d(__webpack_exports__, "SortingType", function() { return __WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__["SortingType"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__, "ButtonActionType")) __webpack_require__.d(__webpack_exports__, "ButtonActionType", function() { return __WEBPACK_IMPORTED_MODULE_1__data_data_structure_interface__["ButtonActionType"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__ = __webpack_require__(605);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__ = __webpack_require__(604);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__, "ResultStatus")) __webpack_require__.d(__webpack_exports__, "ResultStatus", function() { return __WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__["ResultStatus"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__, "IWebApiServices")) __webpack_require__.d(__webpack_exports__, "IWebApiServices", function() { return __WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__["IWebApiServices"]; });
@@ -39,11 +39,11 @@ module.exports = __webpack_require__(459);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__, "ButtonLocation")) __webpack_require__.d(__webpack_exports__, "ButtonLocation", function() { return __WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__["ButtonLocation"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__, "SortingType")) __webpack_require__.d(__webpack_exports__, "SortingType", function() { return __WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__["SortingType"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__, "ButtonActionType")) __webpack_require__.d(__webpack_exports__, "ButtonActionType", function() { return __WEBPACK_IMPORTED_MODULE_2__data_empty_construct_interface__["ButtonActionType"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_result_message_interface__ = __webpack_require__(607);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_result_message_interface__ = __webpack_require__(606);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "ResultStatus", function() { return __WEBPACK_IMPORTED_MODULE_3__data_result_message_interface__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_field_type_interface__ = __webpack_require__(606);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_field_type_interface__ = __webpack_require__(605);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__ = __webpack_require__(614);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__ = __webpack_require__(613);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__, "IWebApiServices")) __webpack_require__.d(__webpack_exports__, "IWebApiServices", function() { return __WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__["IWebApiServices"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__, "IEmptyConstruct")) __webpack_require__.d(__webpack_exports__, "IEmptyConstruct", function() { return __WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__["IEmptyConstruct"]; });
@@ -51,7 +51,7 @@ module.exports = __webpack_require__(459);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__, "ButtonLocation")) __webpack_require__.d(__webpack_exports__, "ButtonLocation", function() { return __WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__["ButtonLocation"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__, "SortingType")) __webpack_require__.d(__webpack_exports__, "SortingType", function() { return __WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__["SortingType"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__, "ButtonActionType")) __webpack_require__.d(__webpack_exports__, "ButtonActionType", function() { return __WEBPACK_IMPORTED_MODULE_5__services_webapi_service_interface__["ButtonActionType"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__ = __webpack_require__(603);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__ = __webpack_require__(602);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__alert_alert_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__, "IWebApiServices")) __webpack_require__.d(__webpack_exports__, "IWebApiServices", function() { return __WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__["IWebApiServices"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__, "IEmptyConstruct")) __webpack_require__.d(__webpack_exports__, "IEmptyConstruct", function() { return __WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__["IEmptyConstruct"]; });
@@ -59,19 +59,19 @@ module.exports = __webpack_require__(459);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__, "ButtonLocation")) __webpack_require__.d(__webpack_exports__, "ButtonLocation", function() { return __WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__["ButtonLocation"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__, "SortingType")) __webpack_require__.d(__webpack_exports__, "SortingType", function() { return __WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__["SortingType"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__, "ButtonActionType")) __webpack_require__.d(__webpack_exports__, "ButtonActionType", function() { return __WEBPACK_IMPORTED_MODULE_6__alert_alert_interface__["ButtonActionType"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__gridview_field_type_interface__ = __webpack_require__(610);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__gridview_field_type_interface__ = __webpack_require__(609);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "FieldType", function() { return __WEBPACK_IMPORTED_MODULE_7__gridview_field_type_interface__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__gridview_grid_button_interface__ = __webpack_require__(611);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__gridview_grid_button_interface__ = __webpack_require__(610);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "ButtonLocation", function() { return __WEBPACK_IMPORTED_MODULE_8__gridview_grid_button_interface__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "ButtonActionType", function() { return __WEBPACK_IMPORTED_MODULE_8__gridview_grid_button_interface__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__ = __webpack_require__(612);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__ = __webpack_require__(611);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__gridview_header_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__, "IWebApiServices")) __webpack_require__.d(__webpack_exports__, "IWebApiServices", function() { return __WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__["IWebApiServices"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__, "IEmptyConstruct")) __webpack_require__.d(__webpack_exports__, "IEmptyConstruct", function() { return __WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__["IEmptyConstruct"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__, "SortingType")) __webpack_require__.d(__webpack_exports__, "SortingType", function() { return __WEBPACK_IMPORTED_MODULE_9__gridview_header_interface__["SortingType"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__gridview_sorting_interface__ = __webpack_require__(613);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__gridview_sorting_interface__ = __webpack_require__(612);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "SortingType", function() { return __WEBPACK_IMPORTED_MODULE_10__gridview_sorting_interface__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown_dropdown_interface__ = __webpack_require__(608);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown_dropdown_interface__ = __webpack_require__(607);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown_dropdown_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__dropdown_dropdown_interface__);
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_11__dropdown_dropdown_interface__, "IWebApiServices")) __webpack_require__.d(__webpack_exports__, "IWebApiServices", function() { return __WEBPACK_IMPORTED_MODULE_11__dropdown_dropdown_interface__["IWebApiServices"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_11__dropdown_dropdown_interface__, "IEmptyConstruct")) __webpack_require__.d(__webpack_exports__, "IEmptyConstruct", function() { return __WEBPACK_IMPORTED_MODULE_11__dropdown_dropdown_interface__["IEmptyConstruct"]; });
@@ -95,15 +95,15 @@ module.exports = __webpack_require__(459);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_service__ = __webpack_require__(618);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dom_dom_service__ = __webpack_require__(617);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__dom_dom_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__notification_service__ = __webpack_require__(620);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__notification_service__ = __webpack_require__(619);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__notification_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__state_event_service__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__state_event_service__ = __webpack_require__(384);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__state_event_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_api_service__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_api_service__ = __webpack_require__(618);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__local_api_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__web_api_service__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__web_api_service__ = __webpack_require__(620);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__web_api_service__["a"]; });
 
 
@@ -136,23 +136,23 @@ let WEBAPISERVICE = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["OpaqueToken
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_component__ = __webpack_require__(584);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_component__ = __webpack_require__(582);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__app_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__admin_admin_component__ = __webpack_require__(576);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__admin_admin_component__ = __webpack_require__(574);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__admin_admin_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__admin_navigation_sidebar_component__ = __webpack_require__(583);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__admin_navigation_sidebar_component__ = __webpack_require__(581);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__admin_navigation_sidebar_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__admin_navigation_header_component__ = __webpack_require__(582);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__admin_navigation_header_component__ = __webpack_require__(580);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__admin_navigation_header_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_navigation_footer_component__ = __webpack_require__(581);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_navigation_footer_component__ = __webpack_require__(579);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__admin_navigation_footer_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__admin_dashboard_component__ = __webpack_require__(577);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__admin_dashboard_component__ = __webpack_require__(575);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__admin_dashboard_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__admin_member_member_main_component__ = __webpack_require__(580);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__admin_member_member_main_component__ = __webpack_require__(578);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_6__admin_member_member_main_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__admin_member_member_list_component__ = __webpack_require__(579);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__admin_member_member_list_component__ = __webpack_require__(577);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_7__admin_member_member_list_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__admin_member_add_edit_member_component__ = __webpack_require__(578);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__admin_member_add_edit_member_component__ = __webpack_require__(576);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_8__admin_member_add_edit_member_component__["a"]; });
 
 
@@ -381,17 +381,6 @@ AppRoutingModule = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__base_add_edit_entity_component__ = __webpack_require__(588);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__base_add_edit_entity_component__["a"]; });
-
-//# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/index.js.map
-
-/***/ }),
-
-/***/ 385:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StateEventService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -448,7 +437,7 @@ StateEventService = __decorate([
 
 /***/ }),
 
-/***/ 458:
+/***/ 456:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -457,20 +446,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 458;
+webpackEmptyContext.id = 456;
 
 
 /***/ }),
 
-/***/ 459:
+/***/ 457:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(364);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_modules_app_module__ = __webpack_require__(586);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(636);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_modules_app_module__ = __webpack_require__(584);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(635);
 
 
 
@@ -491,9 +480,9 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "LANGUAGE", function() { return __WEBPACK_IMPORTED_MODULE_0__app_setting__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "WEBAPI", function() { return __WEBPACK_IMPORTED_MODULE_0__app_setting__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "WEBAPISERVICE", function() { return __WEBPACK_IMPORTED_MODULE_0__app_setting__["c"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index__ = __webpack_require__(587);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "AddOrEditComponent", function() { return __WEBPACK_IMPORTED_MODULE_1__components_index__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controls_index__ = __webpack_require__(596);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controls_index__ = __webpack_require__(595);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "AlertControl", function() { return __WEBPACK_IMPORTED_MODULE_2__controls_index__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "GridViewControl", function() { return __WEBPACK_IMPORTED_MODULE_2__controls_index__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "LoadingControl", function() { return __WEBPACK_IMPORTED_MODULE_2__controls_index__["c"]; });
@@ -508,7 +497,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "DomHandler", function() { return __WEBPACK_IMPORTED_MODULE_3__services_index__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "StateEventService", function() { return __WEBPACK_IMPORTED_MODULE_3__services_index__["c"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "NotificationService", function() { return __WEBPACK_IMPORTED_MODULE_3__services_index__["d"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_index__ = __webpack_require__(600);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_index__ = __webpack_require__(599);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "AsideToggleDirective", function() { return __WEBPACK_IMPORTED_MODULE_4__directives_index__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "NAV_DROPDOWN_DIRECTIVES", function() { return __WEBPACK_IMPORTED_MODULE_4__directives_index__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "SIDEBAR_TOGGLE_DIRECTIVES", function() { return __WEBPACK_IMPORTED_MODULE_4__directives_index__["c"]; });
@@ -519,9 +508,9 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__interfaces_index__, "SortingType")) __webpack_require__.d(__webpack_exports__, "SortingType", function() { return __WEBPACK_IMPORTED_MODULE_5__interfaces_index__["SortingType"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__interfaces_index__, "ButtonLocation")) __webpack_require__.d(__webpack_exports__, "ButtonLocation", function() { return __WEBPACK_IMPORTED_MODULE_5__interfaces_index__["ButtonLocation"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_5__interfaces_index__, "ButtonActionType")) __webpack_require__.d(__webpack_exports__, "ButtonActionType", function() { return __WEBPACK_IMPORTED_MODULE_5__interfaces_index__["ButtonActionType"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__validations_index__ = __webpack_require__(626);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__validations_index__ = __webpack_require__(625);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_index__ = __webpack_require__(617);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_index__ = __webpack_require__(616);
 /* unused harmony namespace reexport */
 
 
@@ -535,7 +524,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 576:
+/***/ 574:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -557,7 +546,7 @@ let AdminComponent = class AdminComponent {
 AdminComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(813)
+        template: __webpack_require__(812)
     }),
     __metadata("design:paramtypes", [])
 ], AdminComponent);
@@ -566,7 +555,7 @@ AdminComponent = __decorate([
 
 /***/ }),
 
-/***/ 577:
+/***/ 575:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1023,7 +1012,7 @@ let DashboardComponent = class DashboardComponent {
 };
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        template: __webpack_require__(814)
+        template: __webpack_require__(813)
     }),
     __metadata("design:paramtypes", [])
 ], DashboardComponent);
@@ -1032,7 +1021,7 @@ DashboardComponent = __decorate([
 
 /***/ }),
 
-/***/ 578:
+/***/ 576:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1041,7 +1030,7 @@ DashboardComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_member_model__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_config_model__ = __webpack_require__(585);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_config_model__ = __webpack_require__(583);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_index__ = __webpack_require__(55);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddOrEditMemberComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1147,7 +1136,7 @@ let AddOrEditMemberComponent = class AddOrEditMemberComponent extends __WEBPACK_
 AddOrEditMemberComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: "add-edit-member",
-        template: __webpack_require__(815)
+        template: __webpack_require__(814)
     }),
     __param(4, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_6__core_index__["WEBAPISERVICE"])),
     __param(5, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_6__core_index__["NotificationService"])),
@@ -1159,7 +1148,7 @@ var _a, _b, _c, _d, _e, _f;
 
 /***/ }),
 
-/***/ 579:
+/***/ 577:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1243,7 +1232,7 @@ __decorate([
 MemberListComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: "member-list",
-        template: __webpack_require__(816)
+        template: __webpack_require__(815)
     }),
     __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["WEBAPISERVICE"])),
     __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"])),
@@ -1255,7 +1244,7 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 580:
+/***/ 578:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1277,7 +1266,7 @@ let MemberMainComponent = class MemberMainComponent {
 MemberMainComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: "member-main",
-        template: __webpack_require__(817)
+        template: __webpack_require__(816)
     }),
     __metadata("design:paramtypes", [])
 ], MemberMainComponent);
@@ -1286,7 +1275,7 @@ MemberMainComponent = __decorate([
 
 /***/ }),
 
-/***/ 581:
+/***/ 579:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1308,7 +1297,7 @@ let FooterComponent = class FooterComponent {
 FooterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-footer',
-        template: __webpack_require__(818)
+        template: __webpack_require__(817)
     }),
     __metadata("design:paramtypes", [])
 ], FooterComponent);
@@ -1317,7 +1306,7 @@ FooterComponent = __decorate([
 
 /***/ }),
 
-/***/ 582:
+/***/ 580:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1342,7 +1331,7 @@ let HeaderComponent = class HeaderComponent {
 HeaderComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-header',
-        template: __webpack_require__(819)
+        template: __webpack_require__(818)
     }),
     __metadata("design:paramtypes", [])
 ], HeaderComponent);
@@ -1351,7 +1340,7 @@ HeaderComponent = __decorate([
 
 /***/ }),
 
-/***/ 583:
+/***/ 581:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1373,7 +1362,7 @@ let SidebarComponent = class SidebarComponent {
 SidebarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-sidebar',
-        template: __webpack_require__(820)
+        template: __webpack_require__(819)
     }),
     __metadata("design:paramtypes", [])
 ], SidebarComponent);
@@ -1382,7 +1371,7 @@ SidebarComponent = __decorate([
 
 /***/ }),
 
-/***/ 584:
+/***/ 582:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1426,7 +1415,7 @@ __decorate([
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'body',
-        template: __webpack_require__(821)
+        template: __webpack_require__(820)
     }),
     __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__core_index__["NotificationService"])),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__core_index__["NotificationService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__core_index__["NotificationService"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]) === "function" && _c || Object])
@@ -1437,7 +1426,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 585:
+/***/ 583:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1483,7 +1472,7 @@ class ConfigModel {
 
 /***/ }),
 
-/***/ 586:
+/***/ 584:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1493,14 +1482,13 @@ class ConfigModel {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dynamic__ = __webpack_require__(364);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__capital_module__ = __webpack_require__(587);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__capital_module__ = __webpack_require__(585);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__share_module__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__control_module__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routings_app_routing__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angularfire2__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angularfire2__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_index__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__core_components_index__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__core_index__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__core_index__ = __webpack_require__(55);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1508,7 +1496,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -1541,14 +1528,14 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_10_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseConfig)
         ],
         providers: [
-            { provide: __WEBPACK_IMPORTED_MODULE_13__core_index__["LANGUAGE"], useValue: 'vn' },
-            { provide: __WEBPACK_IMPORTED_MODULE_13__core_index__["WEBAPI"], useValue: 'http://localhost:8080/' },
+            { provide: __WEBPACK_IMPORTED_MODULE_12__core_index__["LANGUAGE"], useValue: 'vn' },
+            { provide: __WEBPACK_IMPORTED_MODULE_12__core_index__["WEBAPI"], useValue: 'http://localhost:8080/' },
             { provide: __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_1__angular_common__["c" /* HashLocationStrategy */] },
-            { provide: __WEBPACK_IMPORTED_MODULE_13__core_index__["WEBAPISERVICE"], useClass: __WEBPACK_IMPORTED_MODULE_13__core_index__["LocalApiServices"] },
-            __WEBPACK_IMPORTED_MODULE_13__core_index__["DomHandler"], __WEBPACK_IMPORTED_MODULE_13__core_index__["StateEventService"], __WEBPACK_IMPORTED_MODULE_13__core_index__["NotificationService"], __WEBPACK_IMPORTED_MODULE_1__angular_common__["d" /* DatePipe */]
+            { provide: __WEBPACK_IMPORTED_MODULE_12__core_index__["WEBAPISERVICE"], useClass: __WEBPACK_IMPORTED_MODULE_12__core_index__["LocalApiServices"] },
+            __WEBPACK_IMPORTED_MODULE_12__core_index__["DomHandler"], __WEBPACK_IMPORTED_MODULE_12__core_index__["StateEventService"], __WEBPACK_IMPORTED_MODULE_12__core_index__["NotificationService"], __WEBPACK_IMPORTED_MODULE_1__angular_common__["d" /* DatePipe */]
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_11__components_index__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_13__core_index__["AlertControl"], __WEBPACK_IMPORTED_MODULE_12__core_components_index__["a" /* AddOrEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__components_index__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_12__core_index__["AlertControl"],
             __WEBPACK_IMPORTED_MODULE_11__components_index__["b" /* AdminComponent */], __WEBPACK_IMPORTED_MODULE_11__components_index__["c" /* SidebarComponent */], __WEBPACK_IMPORTED_MODULE_11__components_index__["d" /* HeaderComponent */], __WEBPACK_IMPORTED_MODULE_11__components_index__["e" /* FooterComponent */]
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_11__components_index__["a" /* AppComponent */]]
@@ -1560,7 +1547,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 587:
+/***/ 585:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1571,7 +1558,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dyna
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_module__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__share_module__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__routings_app_routing__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_charts_ng2_charts__ = __webpack_require__(808);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_charts_ng2_charts__ = __webpack_require__(807);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_charts_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_ng2_charts_ng2_charts__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_index__ = __webpack_require__(262);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CapitalModule; });
@@ -1614,7 +1601,7 @@ CapitalModule = __decorate([
 
 /***/ }),
 
-/***/ 588:
+/***/ 586:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1733,7 +1720,18 @@ var _a, _b, _c, _d, _e;
 
 /***/ }),
 
-/***/ 589:
+/***/ 587:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__base_add_edit_entity_component__ = __webpack_require__(586);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__base_add_edit_entity_component__["a"]; });
+
+//# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/index.js.map
+
+/***/ }),
+
+/***/ 588:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1844,8 +1842,8 @@ __decorate([
 AlertControl = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'alert',
-        template: __webpack_require__(822),
-        styles: [__webpack_require__(796)],
+        template: __webpack_require__(821),
+        styles: [__webpack_require__(795)],
         encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
     }),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__services_index__["b" /* DomHandler */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_index__["b" /* DomHandler */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["IterableDiffers"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["IterableDiffers"]) === "function" && _d || Object])
@@ -1856,13 +1854,13 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 590:
+/***/ 589:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__ = __webpack_require__(429);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BreadcrumbsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1907,7 +1905,7 @@ let BreadcrumbsComponent = class BreadcrumbsComponent {
 BreadcrumbsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'breadcrumbs',
-        template: __webpack_require__(823)
+        template: __webpack_require__(822)
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object])
 ], BreadcrumbsComponent);
@@ -1917,7 +1915,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 591:
+/***/ 590:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1996,7 +1994,7 @@ DatepickerControl = DatepickerControl_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'datepicker',
         providers: [{ provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* NG_VALUE_ACCESSOR */], useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["forwardRef"])(() => DatepickerControl_1), multi: true }],
-        template: __webpack_require__(824)
+        template: __webpack_require__(823)
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]) === "function" && _b || Object])
 ], DatepickerControl);
@@ -2006,7 +2004,7 @@ var DatepickerControl_1, _a, _b;
 
 /***/ }),
 
-/***/ 592:
+/***/ 591:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2103,7 +2101,7 @@ DropdownCodeControl = DropdownCodeControl_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'dropdown-code',
         providers: [MULTISELECT_VALUE_ACCESSOR],
-        template: __webpack_require__(825)
+        template: __webpack_require__(824)
     }),
     __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["e" /* WebApiServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_index__["e" /* WebApiServices */]) === "function" && _d || Object])
 ], DropdownCodeControl);
@@ -2113,7 +2111,7 @@ var DropdownCodeControl_1, _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 593:
+/***/ 592:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2227,7 +2225,7 @@ DropdownControl = DropdownControl_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'dropdown',
         providers: [MULTISELECT_VALUE_ACCESSOR],
-        template: __webpack_require__(826)
+        template: __webpack_require__(825)
     }),
     __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_2__app_setting__["c" /* WEBAPISERVICE */])),
     __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["e" /* WebApiServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_index__["e" /* WebApiServices */]) === "function" && _e || Object])
@@ -2238,7 +2236,7 @@ var DropdownControl_1, _a, _b, _c, _d, _e;
 
 /***/ }),
 
-/***/ 594:
+/***/ 593:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2356,7 +2354,7 @@ __decorate([
 GridViewControl = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'gridview',
-        template: __webpack_require__(827)
+        template: __webpack_require__(826)
     }),
     __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_2__app_setting__["c" /* WEBAPISERVICE */])),
     __metadata("design:paramtypes", [typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["e" /* WebApiServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_index__["e" /* WebApiServices */]) === "function" && _g || Object])
@@ -2367,7 +2365,7 @@ var _a, _b, _c, _d, _e, _f, _g;
 
 /***/ }),
 
-/***/ 595:
+/***/ 594:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2460,7 +2458,7 @@ __decorate([
 PaginatorControl = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'paginator',
-        template: __webpack_require__(828)
+        template: __webpack_require__(827)
     }),
     __metadata("design:paramtypes", [])
 ], PaginatorControl);
@@ -2470,27 +2468,27 @@ var _a;
 
 /***/ }),
 
-/***/ 596:
+/***/ 595:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert_alert_control__ = __webpack_require__(589);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert_alert_control__ = __webpack_require__(588);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__alert_alert_control__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__loading_loading_control__ = __webpack_require__(597);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__loading_loading_control__ = __webpack_require__(596);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__loading_loading_control__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb_breadcrumb_component__ = __webpack_require__(590);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb_breadcrumb_component__ = __webpack_require__(589);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_2__breadcrumb_breadcrumb_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__gridview_gridview_control__ = __webpack_require__(594);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__gridview_gridview_control__ = __webpack_require__(593);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__gridview_gridview_control__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gridview_paginator_control__ = __webpack_require__(595);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gridview_paginator_control__ = __webpack_require__(594);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_4__gridview_paginator_control__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown_dropdown_control__ = __webpack_require__(593);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown_dropdown_control__ = __webpack_require__(592);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__dropdown_dropdown_control__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown_dropdown_code_control__ = __webpack_require__(592);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown_dropdown_code_control__ = __webpack_require__(591);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_6__dropdown_dropdown_code_control__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__switches_switches_control__ = __webpack_require__(598);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__switches_switches_control__ = __webpack_require__(597);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_7__switches_switches_control__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__datepicker_datepicker_control__ = __webpack_require__(591);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__datepicker_datepicker_control__ = __webpack_require__(590);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_8__datepicker_datepicker_control__["a"]; });
 
 
@@ -2505,7 +2503,7 @@ var _a;
 
 /***/ }),
 
-/***/ 597:
+/***/ 596:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2537,7 +2535,7 @@ __decorate([
 LoadingControl = LoadingControl_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'loading',
-        template: __webpack_require__(829)
+        template: __webpack_require__(828)
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object])
 ], LoadingControl);
@@ -2547,7 +2545,7 @@ var LoadingControl_1, _a;
 
 /***/ }),
 
-/***/ 598:
+/***/ 597:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2676,8 +2674,8 @@ SwitchesControl = SwitchesControl_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'switches',
         providers: [{ provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* NG_VALUE_ACCESSOR */], useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["forwardRef"])(() => SwitchesControl_1), multi: true }],
-        template: __webpack_require__(830),
-        styles: [__webpack_require__(797)]
+        template: __webpack_require__(829),
+        styles: [__webpack_require__(796)]
     })
 ], SwitchesControl);
 
@@ -2686,7 +2684,7 @@ var SwitchesControl_1;
 
 /***/ }),
 
-/***/ 599:
+/***/ 598:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2726,15 +2724,15 @@ AsideToggleDirective = __decorate([
 
 /***/ }),
 
-/***/ 600:
+/***/ 599:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__aside_directive__ = __webpack_require__(599);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__aside_directive__ = __webpack_require__(598);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__aside_directive__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_dropdown_directive__ = __webpack_require__(601);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_dropdown_directive__ = __webpack_require__(600);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__nav_dropdown_directive__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_directive__ = __webpack_require__(602);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_directive__ = __webpack_require__(601);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__sidebar_directive__["a"]; });
 
 
@@ -2743,7 +2741,7 @@ AsideToggleDirective = __decorate([
 
 /***/ }),
 
-/***/ 601:
+/***/ 600:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2818,7 +2816,7 @@ const NAV_DROPDOWN_DIRECTIVES = [NavDropdownDirective, NavDropdownToggleDirectiv
 
 /***/ }),
 
-/***/ 602:
+/***/ 601:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2923,28 +2921,28 @@ const SIDEBAR_TOGGLE_DIRECTIVES = [SidebarToggleDirective, SidebarOffCanvasClose
 
 /***/ }),
 
-/***/ 603:
+/***/ 602:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/alert.interface.js.map
 
 /***/ }),
 
-/***/ 604:
+/***/ 603:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/data-structure.interface.js.map
 
 /***/ }),
 
-/***/ 605:
+/***/ 604:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/empty-construct.interface.js.map
 
 /***/ }),
 
-/***/ 606:
+/***/ 605:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2960,7 +2958,7 @@ OperatorType.ENDWITH = "endwith";
 
 /***/ }),
 
-/***/ 607:
+/***/ 606:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2974,21 +2972,21 @@ var ResultStatus;
 
 /***/ }),
 
-/***/ 608:
+/***/ 607:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/dropdown.interface.js.map
 
 /***/ }),
 
-/***/ 609:
+/***/ 608:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/add-or-edit-entity.interface.js.map
 
 /***/ }),
 
-/***/ 610:
+/***/ 609:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3004,7 +3002,7 @@ var FieldType;
 
 /***/ }),
 
-/***/ 611:
+/***/ 610:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3030,14 +3028,14 @@ var ButtonLocation;
 
 /***/ }),
 
-/***/ 612:
+/***/ 611:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/header.interface.js.map
 
 /***/ }),
 
-/***/ 613:
+/***/ 612:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3058,14 +3056,14 @@ SortingType.Desc = new SortingType('sorting_desc');
 
 /***/ }),
 
-/***/ 614:
+/***/ 613:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/webapi-service.interface.js.map
 
 /***/ }),
 
-/***/ 615:
+/***/ 614:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3086,7 +3084,7 @@ class BaseEntity {
 
 /***/ }),
 
-/***/ 616:
+/***/ 615:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3098,13 +3096,13 @@ class ResultMessage {
 
 /***/ }),
 
-/***/ 617:
+/***/ 616:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__base_base_model__ = __webpack_require__(615);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__base_base_model__ = __webpack_require__(614);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base_result_message_model__ = __webpack_require__(616);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base_result_message_model__ = __webpack_require__(615);
 /* unused harmony namespace reexport */
 
 
@@ -3112,7 +3110,7 @@ class ResultMessage {
 
 /***/ }),
 
-/***/ 618:
+/***/ 617:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3416,13 +3414,13 @@ DomHandler = __decorate([
 
 /***/ }),
 
-/***/ 619:
+/***/ 618:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__interfaces_index__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(388);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(387);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalApiServices; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3545,7 +3543,7 @@ var _a;
 
 /***/ }),
 
-/***/ 620:
+/***/ 619:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3574,7 +3572,7 @@ NotificationService = __decorate([
 
 /***/ }),
 
-/***/ 621:
+/***/ 620:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3583,7 +3581,7 @@ NotificationService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_setting__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__state_event_service__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__state_event_service__ = __webpack_require__(384);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WebApiServices; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3737,7 +3735,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 622:
+/***/ 621:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3757,7 +3755,7 @@ const email = (control) => {
 
 /***/ }),
 
-/***/ 623:
+/***/ 622:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3780,7 +3778,7 @@ const equalTo = (equalControl) => {
 
 /***/ }),
 
-/***/ 624:
+/***/ 623:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3802,7 +3800,7 @@ const equal = (val) => {
 
 /***/ }),
 
-/***/ 625:
+/***/ 624:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3826,23 +3824,23 @@ const greaterThan = (gt) => {
 
 /***/ }),
 
-/***/ 626:
+/***/ 625:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__email_validator__ = __webpack_require__(622);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__equal_validator__ = __webpack_require__(624);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__equal_to_validator__ = __webpack_require__(623);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__greater_than_validator__ = __webpack_require__(625);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__less_than_validator__ = __webpack_require__(627);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__max_validator__ = __webpack_require__(629);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__min_validator__ = __webpack_require__(631);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__max_date_validator__ = __webpack_require__(628);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__min_date_validator__ = __webpack_require__(630);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__number_validator__ = __webpack_require__(632);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__range_validator__ = __webpack_require__(635);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__phone_validator__ = __webpack_require__(633);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__range_length_validator__ = __webpack_require__(634);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__email_validator__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__equal_validator__ = __webpack_require__(623);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__equal_to_validator__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__greater_than_validator__ = __webpack_require__(624);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__less_than_validator__ = __webpack_require__(626);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__max_validator__ = __webpack_require__(628);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__min_validator__ = __webpack_require__(630);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__max_date_validator__ = __webpack_require__(627);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__min_date_validator__ = __webpack_require__(629);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__number_validator__ = __webpack_require__(631);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__range_validator__ = __webpack_require__(634);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__phone_validator__ = __webpack_require__(632);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__range_length_validator__ = __webpack_require__(633);
 
 
 
@@ -3866,7 +3864,7 @@ const CustomValidators = {
 
 /***/ }),
 
-/***/ 627:
+/***/ 626:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3890,7 +3888,7 @@ const lessThan = (lt) => {
 
 /***/ }),
 
-/***/ 628:
+/***/ 627:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3919,7 +3917,7 @@ const maxDate = (maxDate) => {
 
 /***/ }),
 
-/***/ 629:
+/***/ 628:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3943,7 +3941,7 @@ const max = (max) => {
 
 /***/ }),
 
-/***/ 630:
+/***/ 629:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3972,7 +3970,7 @@ const minDate = (minDate) => {
 
 /***/ }),
 
-/***/ 631:
+/***/ 630:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3996,7 +3994,7 @@ const min = (min) => {
 
 /***/ }),
 
-/***/ 632:
+/***/ 631:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4016,7 +4014,7 @@ const number = (control) => {
 
 /***/ }),
 
-/***/ 633:
+/***/ 632:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4062,7 +4060,7 @@ const phone = (locale) => {
 
 /***/ }),
 
-/***/ 634:
+/***/ 633:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4086,7 +4084,7 @@ const rangeLength = (rangeLength) => {
 
 /***/ }),
 
-/***/ 635:
+/***/ 634:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4110,7 +4108,7 @@ const range = (range) => {
 
 /***/ }),
 
-/***/ 636:
+/***/ 635:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4123,7 +4121,7 @@ const environment = {
 
 /***/ }),
 
-/***/ 796:
+/***/ 795:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(193)();
@@ -4141,7 +4139,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 797:
+/***/ 796:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(193)();
@@ -4159,126 +4157,126 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 813:
+/***/ 812:
 /***/ (function(module, exports) {
 
 module.exports = "<app-header></app-header>\r\n<div class=\"app-body\">\r\n    <app-sidebar></app-sidebar>\r\n    <main class=\"main\">\r\n        <ol class=\"breadcrumb\">\r\n            <breadcrumbs></breadcrumbs>\r\n        </ol>\r\n        <div class=\"container-fluid\">\r\n            <router-outlet></router-outlet>\r\n        </div>\r\n    </main>\r\n</div>\r\n<app-footer></app-footer>"
 
 /***/ }),
 
-/***/ 814:
+/***/ 813:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"row\">\r\n  <ul>\r\n    <li *ngFor=\"let item of items | async\">\r\n       {{ item | json }}\r\n    </li>\r\n  </ul>\r\n</div>\r\n<div class=\"animated fadeIn\">\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-cogs bg-primary p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Vốn</div>\r\n          <div class=\"h5\">15.000</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-laptop bg-info p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Hoàn Trả</div>\r\n          <div class=\"h5\">0</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-moon-o bg-warning p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">SL Thành Viên</div>\r\n          <div class=\"h5\">2</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-bell bg-danger p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Lợi Nhuận</div>\r\n          <div class=\"h5\">-4.250</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n  </div>\r\n  <!--/.row-->\r\n  <div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n      <div class=\"my-2\">\r\n        <div class=\"chart-wrapper\" style=\"height:350px\">\r\n          <canvas baseChart class=\"chart\" [datasets]=\"mainChartData\" [labels]=\"mainChartLabels\" [options]=\"mainChartOptions\" [colors]=\"mainChartColours\"\r\n            [legend]=\"mainChartLegend\" [chartType]=\"mainChartType\" (chartHover)=\"chartHovered($event)\" (chartClick)=\"chartClicked($event)\"></canvas>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n  </div>\r\n  <!--/.row-->\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"social-box facebook\">\r\n        <i class=\"fa fa-facebook\"></i>\r\n        <div class=\"chart-wrapper\" style=\"height:90px;\">\r\n          <canvas baseChart class=\"chart\" [datasets]=\"socialChartData1\" [labels]=\"socialChartLabels\" [options]=\"socialChartOptions\"\r\n            [colors]=\"socialChartColours\" [legend]=\"socialChartLegend\" [chartType]=\"socialChartType\" (chartHover)=\"chartHovered($event)\"\r\n            (chartClick)=\"chartClicked($event)\"></canvas>\r\n        </div>\r\n        <ul>\r\n          <li>\r\n            <strong>89k</strong>\r\n            <span>friends</span>\r\n          </li>\r\n          <li>\r\n            <strong>459</strong>\r\n            <span>feeds</span>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n      <!--/.social-box-->\r\n    </div>\r\n    <!--/.col-->\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"social-box twitter\">\r\n        <i class=\"fa fa-twitter\"></i>\r\n        <div class=\"chart-wrapper\" style=\"height:90px;\">\r\n          <canvas baseChart class=\"chart\" [datasets]=\"socialChartData2\" [labels]=\"socialChartLabels\" [options]=\"socialChartOptions\"\r\n            [colors]=\"socialChartColours\" [legend]=\"socialChartLegend\" [chartType]=\"socialChartType\" (chartHover)=\"chartHovered($event)\"\r\n            (chartClick)=\"chartClicked($event)\"></canvas>\r\n        </div>\r\n        <ul>\r\n          <li>\r\n            <strong>973k</strong>\r\n            <span>followers</span>\r\n          </li>\r\n          <li>\r\n            <strong>1.792</strong>\r\n            <span>tweets</span>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n      <!--/.social-box-->\r\n    </div>\r\n    <!--/.col-->\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"social-box linkedin\">\r\n        <i class=\"fa fa-linkedin\"></i>\r\n        <div class=\"chart-wrapper\" style=\"height:90px;\">\r\n          <canvas baseChart class=\"chart\" [datasets]=\"socialChartData3\" [labels]=\"socialChartLabels\" [options]=\"socialChartOptions\"\r\n            [colors]=\"socialChartColours\" [legend]=\"socialChartLegend\" [chartType]=\"socialChartType\" (chartHover)=\"chartHovered($event)\"\r\n            (chartClick)=\"chartClicked($event)\"></canvas>\r\n        </div>\r\n        <ul>\r\n          <li>\r\n            <strong>500+</strong>\r\n            <span>contacts</span>\r\n          </li>\r\n          <li>\r\n            <strong>292</strong>\r\n            <span>feeds</span>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n      <!--/.social-box-->\r\n    </div>\r\n    <!--/.col-->\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"social-box google-plus\">\r\n        <i class=\"fa fa-google-plus\"></i>\r\n        <div class=\"chart-wrapper\" style=\"height:90px;\">\r\n          <canvas baseChart class=\"chart\" [datasets]=\"socialChartData4\" [labels]=\"socialChartLabels\" [options]=\"socialChartOptions\"\r\n            [colors]=\"socialChartColours\" [legend]=\"socialChartLegend\" [chartType]=\"socialChartType\" (chartHover)=\"chartHovered($event)\"\r\n            (chartClick)=\"chartClicked($event)\"></canvas>\r\n        </div>\r\n        <ul>\r\n          <li>\r\n            <strong>894</strong>\r\n            <span>followers</span>\r\n          </li>\r\n          <li>\r\n            <strong>92</strong>\r\n            <span>circles</span>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n      <!--/.social-box-->\r\n    </div>\r\n    <!--/.col-->\r\n  </div>\r\n  <!--/.row-->\r\n  <div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n      <div class=\"card\">\r\n        <div class=\"card-header\">\r\n          Traffic &amp; Sales\r\n        </div>\r\n        <div class=\"card-block\">\r\n          <div class=\"row\">\r\n            <div class=\"col-sm-12 col-lg-4\">\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-6\">\r\n                  <div class=\"callout callout-info\">\r\n                    <small class=\"text-muted\">New Clients</small>\r\n                    <br>\r\n                    <strong class=\"h4\">9,123</strong>\r\n                    <div class=\"chart-wrapper\" style=\"width:100px;height:30px;\">\r\n                      <canvas baseChart class=\"chart\" [datasets]=\"sparklineChartData1\" [labels]=\"sparklineChartLabels\" [options]=\"sparklineChartOptions\"\r\n                        [colors]=\"sparklineChartInfo\" [legend]=\"sparklineChartLegend\" [chartType]=\"sparklineChartType\" (chartHover)=\"chartHovered($event)\"\r\n                        (chartClick)=\"chartClicked($event)\"></canvas>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <!--/.col-->\r\n                <div class=\"col-sm-6\">\r\n                  <div class=\"callout callout-danger\">\r\n                    <small class=\"text-muted\">Recuring Clients</small>\r\n                    <br>\r\n                    <strong class=\"h4\">22,643</strong>\r\n                    <div class=\"chart-wrapper\" style=\"width:100px;height:30px;\">\r\n                      <canvas baseChart class=\"chart\" [datasets]=\"sparklineChartData2\" [labels]=\"sparklineChartLabels\" [options]=\"sparklineChartOptions\"\r\n                        [colors]=\"sparklineChartDanger\" [legend]=\"sparklineChartLegend\" [chartType]=\"sparklineChartType\" (chartHover)=\"chartHovered($event)\"\r\n                        (chartClick)=\"chartClicked($event)\"></canvas>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <!--/.col-->\r\n              </div>\r\n              <!--/.row-->\r\n              <hr class=\"mt-0\">\r\n              <ul class=\"horizontal-bars\">\r\n                <li>\r\n                  <div class=\"title\">\r\n                    Monday\r\n                  </div>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 34%\" aria-valuenow=\"34\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 78%\" aria-valuenow=\"78\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <div class=\"title\">\r\n                    Tuesday\r\n                  </div>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 56%\" aria-valuenow=\"56\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 94%\" aria-valuenow=\"94\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <div class=\"title\">\r\n                    Wednesday\r\n                  </div>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 12%\" aria-valuenow=\"12\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 67%\" aria-valuenow=\"67\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <div class=\"title\">\r\n                    Thursday\r\n                  </div>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 43%\" aria-valuenow=\"43\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 91%\" aria-valuenow=\"91\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <div class=\"title\">\r\n                    Friday\r\n                  </div>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 22%\" aria-valuenow=\"22\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 73%\" aria-valuenow=\"73\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <div class=\"title\">\r\n                    Saturday\r\n                  </div>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 53%\" aria-valuenow=\"53\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 82%\" aria-valuenow=\"82\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <div class=\"title\">\r\n                    Sunday\r\n                  </div>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 9%\" aria-valuenow=\"9\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 69%\" aria-valuenow=\"69\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li class=\"legend\">\r\n                  <span class=\"badge badge-pill badge-info\"></span> <small>New clients</small> &nbsp; <span class=\"badge badge-pill badge-danger\"></span>                  <small>Recurring clients</small>\r\n                </li>\r\n              </ul>\r\n            </div>\r\n            <!--/.col-->\r\n            <div class=\"col-sm-6 col-lg-4\">\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-6\">\r\n                  <div class=\"callout callout-warning\">\r\n                    <small class=\"text-muted\">Pageviews</small>\r\n                    <br>\r\n                    <strong class=\"h4\">78,623</strong>\r\n                    <div class=\"chart-wrapper\" style=\"width:100px;height:30px;\">\r\n                      <canvas baseChart class=\"chart\" [datasets]=\"sparklineChartData1\" [labels]=\"sparklineChartLabels\" [options]=\"sparklineChartOptions\"\r\n                        [colors]=\"sparklineChartWarning\" [legend]=\"sparklineChartLegend\" [chartType]=\"sparklineChartType\" (chartHover)=\"chartHovered($event)\"\r\n                        (chartClick)=\"chartClicked($event)\"></canvas>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <!--/.col-->\r\n                <div class=\"col-sm-6\">\r\n                  <div class=\"callout callout-success\">\r\n                    <small class=\"text-muted\">Organic</small>\r\n                    <br>\r\n                    <strong class=\"h4\">49,123</strong>\r\n                    <div class=\"chart-wrapper\" style=\"width:100px;height:30px;\">\r\n                      <canvas baseChart class=\"chart\" [datasets]=\"sparklineChartData2\" [labels]=\"sparklineChartLabels\" [options]=\"sparklineChartOptions\"\r\n                        [colors]=\"sparklineChartSuccess\" [legend]=\"sparklineChartLegend\" [chartType]=\"sparklineChartType\" (chartHover)=\"chartHovered($event)\"\r\n                        (chartClick)=\"chartClicked($event)\"></canvas>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <!--/.col-->\r\n              </div>\r\n              <!--/.row-->\r\n              <hr class=\"mt-0\">\r\n              <ul class=\"horizontal-bars type-2\">\r\n                <li>\r\n                  <i class=\"icon-user\"></i>\r\n                  <span class=\"title\">Male</span>\r\n                  <span class=\"value\">43%</span>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 43%\" aria-valuenow=\"43\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-user-female\"></i>\r\n                  <span class=\"title\">Female</span>\r\n                  <span class=\"value\">37%</span>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 37%\" aria-valuenow=\"37\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li class=\"divider\"></li>\r\n                <li>\r\n                  <i class=\"icon-globe\"></i>\r\n                  <span class=\"title\">Organic Search</span>\r\n                  <span class=\"value\">191,235 <span class=\"text-muted small\">(56%)</span></span>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 56%\" aria-valuenow=\"56\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-social-facebook\"></i>\r\n                  <span class=\"title\">Facebook</span>\r\n                  <span class=\"value\">51,223 <span class=\"text-muted small\">(15%)</span></span>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 15%\" aria-valuenow=\"15\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-social-twitter\"></i>\r\n                  <span class=\"title\">Twitter</span>\r\n                  <span class=\"value\">37,564 <span class=\"text-muted small\">(11%)</span></span>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 11%\" aria-valuenow=\"11\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-social-linkedin\"></i>\r\n                  <span class=\"title\">LinkedIn</span>\r\n                  <span class=\"value\">27,319 <span class=\"text-muted small\">(8%)</span></span>\r\n                  <div class=\"bars\">\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 8%\" aria-valuenow=\"8\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </div>\r\n                </li>\r\n                <li class=\"divider text-center\">\r\n                  <button type=\"button\" class=\"btn btn-sm btn-link text-muted\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"show more\"><i class=\"icon-options\"></i></button>\r\n                </li>\r\n              </ul>\r\n            </div>\r\n            <!--/.col-->\r\n            <div class=\"col-sm-6 col-lg-4\">\r\n              <div class=\"row\">\r\n                <div class=\"col-sm-6\">\r\n                  <div class=\"callout\">\r\n                    <small class=\"text-muted\">CTR</small>\r\n                    <br>\r\n                    <strong class=\"h4\">23%</strong>\r\n                    <div class=\"chart-wrapper\" style=\"width:100px;height:30px;\">\r\n                      <canvas baseChart class=\"chart\" [datasets]=\"sparklineChartData1\" [labels]=\"sparklineChartLabels\" [options]=\"sparklineChartOptions\"\r\n                        [colors]=\"sparklineChartDefault\" [legend]=\"sparklineChartLegend\" [chartType]=\"sparklineChartType\" (chartHover)=\"chartHovered($event)\"\r\n                        (chartClick)=\"chartClicked($event)\"></canvas>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <!--/.col-->\r\n                <div class=\"col-sm-6\">\r\n                  <div class=\"callout callout-primary\">\r\n                    <small class=\"text-muted\">Bounce Rate</small>\r\n                    <br>\r\n                    <strong class=\"h4\">5%</strong>\r\n                    <div class=\"chart-wrapper\" style=\"width:100px;height:30px;\">\r\n                      <canvas baseChart class=\"chart\" [datasets]=\"sparklineChartData2\" [labels]=\"sparklineChartLabels\" [options]=\"sparklineChartOptions\"\r\n                        [colors]=\"sparklineChartPrimary\" [legend]=\"sparklineChartLegend\" [chartType]=\"sparklineChartType\" (chartHover)=\"chartHovered($event)\"\r\n                        (chartClick)=\"chartClicked($event)\"></canvas>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <!--/.col-->\r\n              </div>\r\n              <!--/.row-->\r\n              <hr class=\"mt-0\">\r\n              <ul class=\"icons-list\">\r\n                <li>\r\n                  <i class=\"icon-screen-desktop bg-primary\"></i>\r\n                  <div class=\"desc\">\r\n                    <div class=\"title\">iMac 4k</div>\r\n                    <small>Lorem ipsum dolor sit amet</small>\r\n                  </div>\r\n                  <div class=\"value\">\r\n                    <div class=\"small text-muted\">Sold this week</div>\r\n                    <strong>1.924</strong>\r\n                  </div>\r\n                  <div class=\"actions\">\r\n                    <button type=\"button\" class=\"btn btn-link text-muted\"><i class=\"icon-settings\"></i></button>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-screen-smartphone bg-info\"></i>\r\n                  <div class=\"desc\">\r\n                    <div class=\"title\">Samsung Galaxy Edge</div>\r\n                    <small>Lorem ipsum dolor sit amet</small>\r\n                  </div>\r\n                  <div class=\"value\">\r\n                    <div class=\"small text-muted\">Sold this week</div>\r\n                    <strong>1.224</strong>\r\n                  </div>\r\n                  <div class=\"actions\">\r\n                    <button type=\"button\" class=\"btn btn-link text-muted\"><i class=\"icon-settings\"></i></button>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-screen-smartphone bg-warning\"></i>\r\n                  <div class=\"desc\">\r\n                    <div class=\"title\">iPhone 6S</div>\r\n                    <small>Lorem ipsum dolor sit amet</small>\r\n                  </div>\r\n                  <div class=\"value\">\r\n                    <div class=\"small text-muted\">Sold this week</div>\r\n                    <strong>1.163</strong>\r\n                  </div>\r\n                  <div class=\"actions\">\r\n                    <button type=\"button\" class=\"btn btn-link text-muted\"><i class=\"icon-settings\"></i></button>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-user bg-danger\"></i>\r\n                  <div class=\"desc\">\r\n                    <div class=\"title\">Premium accounts</div>\r\n                    <small>Lorem ipsum dolor sit amet</small>\r\n                  </div>\r\n                  <div class=\"value\">\r\n                    <div class=\"small text-muted\">Sold this week</div>\r\n                    <strong>928</strong>\r\n                  </div>\r\n                  <div class=\"actions\">\r\n                    <button type=\"button\" class=\"btn btn-link text-muted\"><i class=\"icon-settings\"></i></button>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-social-spotify bg-success\"></i>\r\n                  <div class=\"desc\">\r\n                    <div class=\"title\">Spotify Subscriptions</div>\r\n                    <small>Lorem ipsum dolor sit amet</small>\r\n                  </div>\r\n                  <div class=\"value\">\r\n                    <div class=\"small text-muted\">Sold this week</div>\r\n                    <strong>893</strong>\r\n                  </div>\r\n                  <div class=\"actions\">\r\n                    <button type=\"button\" class=\"btn btn-link text-muted\"><i class=\"icon-settings\"></i></button>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-cloud-download bg-danger\"></i>\r\n                  <div class=\"desc\">\r\n                    <div class=\"title\">Ebook</div>\r\n                    <small>Lorem ipsum dolor sit amet</small>\r\n                  </div>\r\n                  <div class=\"value\">\r\n                    <div class=\"small text-muted\">Downloads</div>\r\n                    <strong>121.924</strong>\r\n                  </div>\r\n                  <div class=\"actions\">\r\n                    <button type=\"button\" class=\"btn btn-link text-muted\"><i class=\"icon-settings\"></i></button>\r\n                  </div>\r\n                </li>\r\n                <li>\r\n                  <i class=\"icon-camera bg-warning\"></i>\r\n                  <div class=\"desc\">\r\n                    <div class=\"title\">Photos</div>\r\n                    <small>Lorem ipsum dolor sit amet</small>\r\n                  </div>\r\n                  <div class=\"value\">\r\n                    <div class=\"small text-muted\">Uploaded</div>\r\n                    <strong>12.125</strong>\r\n                  </div>\r\n                  <div class=\"actions\">\r\n                    <button type=\"button\" class=\"btn btn-link text-muted\"><i class=\"icon-settings\"></i></button>\r\n                  </div>\r\n                </li>\r\n                <li class=\"divider text-center\">\r\n                  <button type=\"button\" class=\"btn btn-sm btn-link text-muted\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"show more\"><i class=\"icon-options\"></i></button>\r\n                </li>\r\n              </ul>\r\n            </div>\r\n            <!--/.col-->\r\n          </div>\r\n          <!--/.row-->\r\n          <br>\r\n          <div class=\"table-responsive\">\r\n            <table class=\"table table-hover table-outline mb-0 hidden-sm-down\">\r\n              <thead class=\"thead-default\">\r\n                <tr>\r\n                  <th class=\"text-center\"><i class=\"icon-people\"></i></th>\r\n                  <th>User</th>\r\n                  <th class=\"text-center\">Country</th>\r\n                  <th>Usage</th>\r\n                  <th class=\"text-center\">Payment Method</th>\r\n                  <th>Activity</th>\r\n                </tr>\r\n              </thead>\r\n              <tbody>\r\n                <tr>\r\n                  <td class=\"text-center\">\r\n                    <div class=\"avatar\">\r\n                      <img src=\"assets/img/avatars/1.jpg\" class=\"img-avatar\" alt=\"admin@bootstrapmaster.com\" src=\"assets/img/avatars/1.jpg\">\r\n                      <span class=\"avatar-status badge-success\"></span>\r\n                    </div>\r\n                  </td>\r\n                  <td>\r\n                    <div>Yiorgos Avraamu</div>\r\n                    <div class=\"small text-muted\">\r\n                      <span>New</span> | Registered: Jan 1, 2015\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <img src=\"assets/img/flags/USA.png\" alt=\"USA\" style=\"height:24px;\" src=\"assets/img/flags/USA.png\">\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"clearfix\">\r\n                      <div class=\"float-left\">\r\n                        <strong>50%</strong>\r\n                      </div>\r\n                      <div class=\"float-right\">\r\n                        <small class=\"text-muted\">Jun 11, 2015 - Jul 10, 2015</small>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 50%\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <i class=\"fa fa-cc-mastercard\" style=\"font-size:24px\"></i>\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"small text-muted\">Last login</div>\r\n                    <strong>10 sec ago</strong>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td class=\"text-center\">\r\n                    <div class=\"avatar\">\r\n                      <img src=\"assets/img/avatars/2.jpg\" class=\"img-avatar\" alt=\"admin@bootstrapmaster.com\" src=\"assets/img/avatars/2.jpg\">\r\n                      <span class=\"avatar-status badge-danger\"></span>\r\n                    </div>\r\n                  </td>\r\n                  <td>\r\n                    <div>Avram Tarasios</div>\r\n                    <div class=\"small text-muted\">\r\n\r\n                      <span>Recurring</span> | Registered: Jan 1, 2015\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <img src=\"assets/img/flags/Brazil.png\" alt=\"Brazil\" style=\"height:24px;\" src=\"assets/img/flags/Brazil.png\">\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"clearfix\">\r\n                      <div class=\"float-left\">\r\n                        <strong>10%</strong>\r\n                      </div>\r\n                      <div class=\"float-right\">\r\n                        <small class=\"text-muted\">Jun 11, 2015 - Jul 10, 2015</small>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 10%\" aria-valuenow=\"10\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <i class=\"fa fa-cc-visa\" style=\"font-size:24px\"></i>\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"small text-muted\">Last login</div>\r\n                    <strong>5 minutes ago</strong>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td class=\"text-center\">\r\n                    <div class=\"avatar\">\r\n                      <img src=\"assets/img/avatars/3.jpg\" class=\"img-avatar\" alt=\"admin@bootstrapmaster.com\" src=\"assets/img/avatars/3.jpg\">\r\n                      <span class=\"avatar-status badge-warning\"></span>\r\n                    </div>\r\n                  </td>\r\n                  <td>\r\n                    <div>Quintin Ed</div>\r\n                    <div class=\"small text-muted\">\r\n                      <span>New</span> | Registered: Jan 1, 2015\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <img src=\"assets/img/flags/India.png\" alt=\"India\" style=\"height:24px;\" src=\"assets/img/flags/India.png\">\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"clearfix\">\r\n                      <div class=\"float-left\">\r\n                        <strong>74%</strong>\r\n                      </div>\r\n                      <div class=\"float-right\">\r\n                        <small class=\"text-muted\">Jun 11, 2015 - Jul 10, 2015</small>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-warning\" role=\"progressbar\" style=\"width: 74%\" aria-valuenow=\"74\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <i class=\"fa fa-cc-stripe\" style=\"font-size:24px\"></i>\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"small text-muted\">Last login</div>\r\n                    <strong>1 hour ago</strong>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td class=\"text-center\">\r\n                    <div class=\"avatar\">\r\n                      <img src=\"assets/img/avatars/4.jpg\" class=\"img-avatar\" alt=\"admin@bootstrapmaster.com\" src=\"assets/img/avatars/4.jpg\">\r\n                      <span class=\"avatar-status badge-default\"></span>\r\n                    </div>\r\n                  </td>\r\n                  <td>\r\n                    <div>Enéas Kwadwo</div>\r\n                    <div class=\"small text-muted\">\r\n                      <span>New</span> | Registered: Jan 1, 2015\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <img src=\"assets/img/flags/France.png\" alt=\"France\" style=\"height:24px;\" src=\"assets/img/flags/France.png\">\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"clearfix\">\r\n                      <div class=\"float-left\">\r\n                        <strong>98%</strong>\r\n                      </div>\r\n                      <div class=\"float-right\">\r\n                        <small class=\"text-muted\">Jun 11, 2015 - Jul 10, 2015</small>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-danger\" role=\"progressbar\" style=\"width: 98%\" aria-valuenow=\"98\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <i class=\"fa fa-paypal\" style=\"font-size:24px\"></i>\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"small text-muted\">Last login</div>\r\n                    <strong>Last month</strong>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td class=\"text-center\">\r\n                    <div class=\"avatar\">\r\n                      <img src=\"assets/img/avatars/5.jpg\" class=\"img-avatar\" alt=\"admin@bootstrapmaster.com\" src=\"assets/img/avatars/5.jpg\">\r\n                      <span class=\"avatar-status badge-success\"></span>\r\n                    </div>\r\n                  </td>\r\n                  <td>\r\n                    <div>Agapetus Tadeáš</div>\r\n                    <div class=\"small text-muted\">\r\n                      <span>New</span> | Registered: Jan 1, 2015\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <img src=\"assets/img/flags/Spain.png\" alt=\"Spain\" style=\"height:24px;\" src=\"assets/img/flags/Spain.png\">\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"clearfix\">\r\n                      <div class=\"float-left\">\r\n                        <strong>22%</strong>\r\n                      </div>\r\n                      <div class=\"float-right\">\r\n                        <small class=\"text-muted\">Jun 11, 2015 - Jul 10, 2015</small>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: 22%\" aria-valuenow=\"22\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <i class=\"fa fa-google-wallet\" style=\"font-size:24px\"></i>\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"small text-muted\">Last login</div>\r\n                    <strong>Last week</strong>\r\n                  </td>\r\n                </tr>\r\n                <tr>\r\n                  <td class=\"text-center\">\r\n                    <div class=\"avatar\">\r\n                      <img src=\"assets/img/avatars/6.jpg\" class=\"img-avatar\" alt=\"admin@bootstrapmaster.com\" src=\"assets/img/avatars/6.jpg\">\r\n                      <span class=\"avatar-status badge-danger\"></span>\r\n                    </div>\r\n                  </td>\r\n                  <td>\r\n                    <div>Friderik Dávid</div>\r\n                    <div class=\"small text-muted\">\r\n                      <span>New</span> | Registered: Jan 1, 2015\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <img src=\"assets/img/flags/Poland.png\" alt=\"Poland\" style=\"height:24px;\" src=\"assets/img/flags/Poland.png\">\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"clearfix\">\r\n                      <div class=\"float-left\">\r\n                        <strong>43%</strong>\r\n                      </div>\r\n                      <div class=\"float-right\">\r\n                        <small class=\"text-muted\">Jun 11, 2015 - Jul 10, 2015</small>\r\n                      </div>\r\n                    </div>\r\n                    <div class=\"progress progress-xs\">\r\n                      <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 43%\" aria-valuenow=\"43\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\r\n                    </div>\r\n                  </td>\r\n                  <td class=\"text-center\">\r\n                    <i class=\"fa fa-cc-amex\" style=\"font-size:24px\"></i>\r\n                  </td>\r\n                  <td>\r\n                    <div class=\"small text-muted\">Last login</div>\r\n                    <strong>Yesterday</strong>\r\n                  </td>\r\n                </tr>\r\n              </tbody>\r\n            </table>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n  </div>\r\n  <!--/.row-->\r\n</div>"
 
 /***/ }),
 
-/***/ 815:
+/***/ 814:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n        <loading [loading]=\"loading\">\r\n            <form [formGroup]=\"addOrEditForm\" (ngSubmit)=\"onSubmitCustom($event)\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header\">\r\n                        <strong>{{ entityId != null ? 'Cập Nhật Thông Tin Thành Viên' : 'Thêm Mới Thông Tin Thành Viên'}}</strong>\r\n                        <button class=\"btn btn-default pull-right\" type=\"button\" (click)=\"onCancel()\">Hủy Bỏ</button>\r\n                        <button class=\"btn btn-primary pull-right\" type=\"submit\" [disabled]=\"!addOrEditForm.valid\">Lưu</button>\r\n                    </div>\r\n                    <div class=\"card-block\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"form-group\">\r\n                                    <label for=\"name\">Họ & Tên</label>\r\n                                    <input type=\"text\" class=\"form-control\" id=\"name\" formControlName=\"Name\" [(ngModel)]=\"entity.Name\">\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"email\">Email</label>\r\n                                <input type=\"email\" class=\"form-control\" id=\"email\" formControlName=\"Email\" [(ngModel)]=\"entity.Email\">\r\n                            </div>\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"phone\">Điện Thoại</label>\r\n                                <input type=\"text\" class=\"form-control\" id=\"phone\" formControlName=\"Phone\" [(ngModel)]=\"entity.Phone\">\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"form-group\">\r\n                                    <label for=\"name\">Địa Chỉ</label>\r\n                                    <input type=\"text\" class=\"form-control\" id=\"name\" formControlName=\"Address\" [(ngModel)]=\"entity.Address\">\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"original-amount\">Tiền Khởi Đầu</label>\r\n                                <input type=\"number\" class=\"form-control\" id=\"original-amount\" formControlName=\"OriginalAmount\" [(ngModel)]=\"entity.OriginalAmount\">\r\n                            </div>\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"refund-amount\">Tiền Hoàn Trả</label>\r\n                                <input type=\"number\" class=\"form-control\" id=\"refund-amount\" formControlName=\"RefundAmount\" [(ngModel)]=\"entity.RefundAmount\">\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </loading>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 816:
+/***/ 815:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                <strong>Danh sách thành viên</strong>\r\n            </div>\r\n            <div class=\"card-block\">\r\n                <gridview #grid [entity]=\"entityType\" [useCheckbox]=\"false\" [filters]=\"filters\" \r\n                          (actionEvent)=\"onActionEvent($event)\" \r\n                          (loadDataEvent)=\"onLoadDataEvent($event)\"></gridview>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 817:
+/***/ 816:
 /***/ (function(module, exports) {
 
 module.exports = " <router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
-/***/ 818:
+/***/ 817:
 /***/ (function(module, exports) {
 
 module.exports = "<footer class=\"app-footer\">\r\n  <span class=\"float-right\">\r\n    Powered by Capital Management\r\n  </span>\r\n</footer>"
 
 /***/ }),
 
-/***/ 819:
+/***/ 818:
 /***/ (function(module, exports) {
 
 module.exports = "<header class=\"app-header navbar\">\r\n    <button class=\"navbar-toggler mobile-sidebar-toggler hidden-lg-up\" type=\"button\">&#9776;</button>\r\n    <a class=\"navbar-brand\" href=\"javasript:void(0)\"></a>\r\n\r\n    <ul class=\"nav navbar-nav hidden-md-down\">\r\n        <li class=\"nav-item\">\r\n            <a class=\"nav-link navbar-toggler sidebar-toggler\" href=\"javasript:void(0)\">&#9776;</a>\r\n        </li>\r\n    </ul>\r\n    <ul class=\"nav navbar-nav ml-auto\">\r\n        <li class=\"nav-item dropdown\" dropdown (onToggle)=\"toggled($event)\">\r\n            <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"javasript:void(0)\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\"\r\n                dropdownToggle>\r\n                <img src=\"assets/img/avatars/6.jpg\" class=\"img-avatar\" alt=\"admin@bootstrapmaster.com\">\r\n                <span class=\"hidden-md-down\">admin</span>\r\n            </a>\r\n            <div class=\"dropdown-menu dropdown-menu-right\" dropdownMenu aria-labelledby=\"simple-dropdown\">\r\n                <a class=\"dropdown-item\" href=\"javasript:void(0)\"><i class=\"fa fa-shield\"></i> Lock account</a>\r\n                <a class=\"dropdown-item\" href=\"javasript:void(0)\"><i class=\"fa fa-lock\"></i> Logout</a>\r\n            </div>\r\n        </li>\r\n    </ul>\r\n</header>"
 
 /***/ }),
 
-/***/ 820:
+/***/ 819:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"sidebar\">\r\n    <nav class=\"sidebar-nav\">\r\n        <ul class=\"nav\">\r\n            <li class=\"nav-item\">\r\n                <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['/dashboard']\"><i class=\"icon-speedometer\"></i> Dashboard</a>\r\n            </li>\r\n            <li class=\"nav-item nav-dropdown\" routerLinkActive=\"open\">\r\n                <a class=\"nav-link nav-dropdown-toggle\" href=\"#\"><i class=\"icon-puzzle\"></i> Quản Lý</a>\r\n                <ul class=\"nav-dropdown-items\">\r\n                    <li class=\"nav-item\">\r\n                        <a class=\"nav-link\" routerLinkActive=\"active\" [routerLink]=\"['/members']\"><i class=\"icon-puzzle\"></i> Thành Viên</a>\r\n                    </li>\r\n                </ul>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n</div>"
 
 /***/ }),
 
-/***/ 821:
+/***/ 820:
 /***/ (function(module, exports) {
 
 module.exports = "<alert #alert [life]=\"5000\" [value]=\"message\"></alert>\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
-/***/ 822:
+/***/ 821:
 /***/ (function(module, exports) {
 
 module.exports = "<div #container [ngClass]=\"'ui-growl ui-widget'\" [style.zIndex]=\"zIndex\" [ngStyle]=\"style\" [class]=\"styleClass\">\r\n    <div #msgel *ngFor=\"let msg of value\" class=\"ui-growl-item-container ui-state-highlight ui-corner-all ui-shadow\" aria-live=\"polite\"\r\n         [ngClass]=\"{'ui-growl-message-info':msg.severity == 'info','ui-growl-message-warn':msg.severity == 'warn',\r\n                    'ui-growl-message-error':msg.severity == 'error','ui-growl-message-success':msg.severity == 'success'}\">\r\n        <div class=\"ui-growl-item\">\r\n            <div class=\"ui-growl-icon-close fa fa-close\" (click)=\"remove(msg,msgel)\"></div>\r\n            <span class=\"ui-growl-image fa fa-2x\"\r\n                  [ngClass]=\"{'fa-info-circle':msg.severity == 'info','fa-exclamation-circle':msg.severity == 'warn',\r\n                                'fa-close':msg.severity == 'error','fa-check':msg.severity == 'success'}\"></span>\r\n            <div class=\"ui-growl-message\">\r\n                <span class=\"ui-growl-title\">{{msg.summary}}</span>\r\n                <p [innerHTML]=\"msg.detail\"></p>\r\n            </div>\r\n            <div style=\"clear: both;\"></div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 823:
+/***/ 822:
 /***/ (function(module, exports) {
 
 module.exports = "<template ngFor let-breadcrumb [ngForOf]=\"breadcrumbs\" let-last=l ast>\r\n    <li class=\"breadcrumb-item\" *ngIf=\"breadcrumb.label.title && breadcrumb.url.substring(breadcrumb.url.length-1) == '/' || breadcrumb.label.title && last\"\r\n        [ngClass]=\"{active: last}\">\r\n        <a *ngIf=\"!last\" routerLink=\"breadcrumb.url\">{{breadcrumb.label.title}}</a>\r\n        <span *ngIf=\"last\" routerLink=\"breadcrumb.url\">{{breadcrumb.label.title}}</span>\r\n    </li>\r\n</template>"
 
 /***/ }),
 
-/***/ 824:
+/***/ 823:
 /***/ (function(module, exports) {
 
 module.exports = "<fieldset>\r\n    <div class=\"control-group\">\r\n        <div class=\"controls\">\r\n            <div class=\"col-md-11 xdisplay_inputx form-group has-feedback\">\r\n                <input type=\"text\" class=\"form-control has-feedback-left\" \r\n                [id]=\"id\" placeholder=\"{{placeholder}}\" aria-describedby=\"inputSuccess2Status3\">\r\n                <span class=\"fa fa-calendar-o form-control-feedback left\" aria-hidden=\"true\"></span>\r\n                <span id=\"inputSuccess2Status3\" class=\"sr-only\">(success)</span>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</fieldset>"
 
 /***/ }),
 
-/***/ 825:
+/***/ 824:
 /***/ (function(module, exports) {
 
 module.exports = "<select [id]=\"id\" class=\"select2_single form-control\"\r\n        [(ngModel)]=\"value\" (ngModelChange)=\"selectedItem()\">\r\n    <option value=\"\" disabled selected>{{itemDefault}}</option>\r\n    <template ngFor let-item [ngForOf]=\"sources\">\r\n        <option [value]=\"item.tv2Code\" [attr.selected]=\"item.seleted ? true : null\">{{item.name}}</option>\r\n    </template>\r\n</select>"
 
 /***/ }),
 
-/***/ 826:
+/***/ 825:
 /***/ (function(module, exports) {
 
 module.exports = "<select [id]=\"id\" class=\"select2_single form-control\"\r\n        [(ngModel)]=\"value\" (ngModelChange)=\"selectedItem()\"\r\n        [disabled]=\"disabled\">\r\n    <option value=\"\" disabled selected>{{itemDefault}}</option>\r\n    <template ngFor let-item [ngForOf]=\"sources\">\r\n        <option [value]=\"item.code\" [attr.selected]=\"item.seleted ? true : null\">{{item.name}}</option>\r\n    </template>\r\n</select>"
 
 /***/ }),
 
-/***/ 827:
+/***/ 826:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"col-lg-12\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-6 col-sm-6 col-xs-6\">\r\n            <template ngFor let-button [ngForOf]=\"buttonGrid\">\r\n                <button *ngIf=\"isButtonLeftTop(button)\" (click)=\"onButtonEvent(null,button)\" [ngClass]=\"button.Class\">\r\n                    <i [ngClass]=\"button.Icon\"></i> {{button.Title}}\r\n                </button>\r\n            </template>\r\n        </div>\r\n        <div class=\"col-md-6 col-sm-6 col-xs-6\">\r\n            <template ngFor let-button [ngForOf]=\"buttonGrid\">\r\n                <button *ngIf=\"isButtonRightTop(button)\" (click)=\"onButtonEvent(null,button)\" [ngClass]=\"button.Class\">\r\n                    <i [ngClass]=\"button.Icon\"></i> {{button.Title}}\r\n                </button>\r\n            </template>\r\n            <button (click)=\"onLoadDataEvent()\" class=\"btn btn-primary pull-right\">\r\n                <i class=\"fa fa-refresh\"></i> Tải Dữ Liệu\r\n            </button>\r\n        </div>\r\n    </div>\r\n    <div class=\"dataTables_wrapper\">\r\n        <loading [loading]=\"loading\">\r\n            <!--<div class=\"dataTables_length\" id=\"demo-table_length\">\r\n                <label>\r\n                    Show <select name=\"demo-table_length\" aria-controls=\"demo-table\" class=\"\">\r\n                        <option value=\"10\">10</option>\r\n                        <option value=\"25\">25</option>\r\n                        <option value=\"50\">50</option>\r\n                        <option value=\"100\">100</option>\r\n                    </select> entries\r\n                </label>\r\n            </div>\r\n            <div id=\"demo-table_filter\" class=\"dataTables_filter\">\r\n                <div class=\"input-field col s6 search-div right\" style=\"width: 250px\">\r\n                    <i class=\"material-icons search-icon\">search</i>\r\n                    <input id=\"search-items\" type=\"text\" class=\"validate\">\r\n                    <label for=\"icon_prefix\" class=\"search-label\">Search</label>\r\n                </div>\r\n            </div>-->\r\n            <table id=\"demo-table\" class=\"responsive-table display dataTable\" role=\"grid\" aria-describedby=\"demo-table_info\">\r\n                <thead>\r\n                    <tr role=\"row\">\r\n                        <th *ngIf=\"useCheckbox\"><i class=\"zmdi zmdi-delete\"></i></th>\r\n                        <th *ngFor=\"let header of headerGrid\" [ngClass]=\"header.SortingType.cssClass\" [ngStyle]=\"{'width': header.Width }\"\r\n                            rowspan=\"1\" colspan=\"1\">{{header.Title}}</th>\r\n                        <template ngFor let-button [ngForOf]=\"buttonGrid\">\r\n                            <th *ngIf=\"isButtonInGrid(button)\" style=\"width:100px;\"></th>\r\n                        </template>\r\n                    </tr>\r\n                </thead>\r\n                <tfoot>\r\n                    <tr>\r\n                        <th *ngIf=\"useCheckbox\"><i class=\"zmdi zmdi-delete\"></i></th>\r\n                        <th *ngFor=\"let header of headerGrid\" rowspan=\"1\" colspan=\"1\">{{header.Title}}</th>\r\n                        <template ngFor let-button [ngForOf]=\"buttonGrid\">\r\n                            <th *ngIf=\"isButtonInGrid(button)\" style=\"width:100px;\"></th>\r\n                        </template>\r\n                    </tr>\r\n                </tfoot>\r\n                <tbody>\r\n                    <tr role=\"row\" *ngFor=\"let item of sources; let index = index\" [ngClass]=\"index % 2 == 0 ? 'odd' : 'even'\">\r\n                        <td *ngIf=\"useCheckbox\">\r\n                            <input type=\"checkbox\" class=\"filled-in checkbox-info\" [id]=\"'checkbox' + index\" (change)=\"rowCheck($event, item)\">\r\n                            <label [attr.for]=\"'checkbox' + index\"></label>\r\n                        </td>\r\n                        <td *ngFor=\"let field of headerGrid\">\r\n                            <template [ngIf]=\"isFieldImage(field)\">\r\n                                <img [src]=\"item[field.Name]\" />\r\n                            </template>\r\n                            <template [ngIf]=\"!isFieldImage(field)\">\r\n                                {{item[field.Name]}}\r\n                            </template>\r\n                        </td>\r\n                        <template ngFor let-button [ngForOf]=\"buttonGrid\">\r\n                            <td *ngIf=\"isButtonInGrid(button)\">\r\n                                <button (click)=\"onButtonEvent(item, button)\" [ngClass]=\"button.Class\">\r\n                                    <i [ngClass]=\"button.Icon\"></i>\r\n                                </button>\r\n                            </td>\r\n                        </template>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            <paginator [totalRecords]=\"totalRecord\" (selectPage)=\"onSelectPage($event)\"></paginator>\r\n        </loading>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 828:
+/***/ 827:
 /***/ (function(module, exports) {
 
 module.exports = "<ul class=\"pagination\" *ngIf=\"pager.pages && pager.pages.length\">\r\n    <li class=\"page-item\" [ngStyle]=\"{'display': pager.currentPage === 1 ? 'none' : 'block'}\" (click)=\"setPage(pager.currentPage - 1)\">\r\n        <a class=\"page-link\" href=\"#\">Trước</a>\r\n    </li>\r\n    <template ngFor let-page [ngForOf]=\"pager.pages\">\r\n        <li *ngIf=\"pager.currentPage === page\" class=\"page-item active\"><a class=\"page-link\" (click)=\"setPage(page)\">{{page}}</a></li>\r\n        <li *ngIf=\"pager.currentPage !== page\" class=\"page-item\"><a class=\"page-link\" (click)=\"setPage(page)\">{{page}}</a></li>\r\n    </template>\r\n    <li class=\"page-item\" [ngStyle]=\"{'display': pager.currentPage === pager.totalPages ? 'none' : 'block'}\" (click)=\"setPage(pager.currentPage + 1)\">\r\n        <a class=\"page-link\" href=\"#\">Next</a>\r\n    </li>\r\n</ul>"
 
 /***/ }),
 
-/***/ 829:
+/***/ 828:
 /***/ (function(module, exports) {
 
 module.exports = "<div [id]=\"id\" class=\"loader-content\" [ngStyle]=\"{'display': loading ? 'block' : 'none'}\">\r\n    <div id=\"loader\"></div>\r\n</div>\r\n<ng-content></ng-content>"
 
 /***/ }),
 
-/***/ 830:
+/***/ 829:
 /***/ (function(module, exports) {
 
 module.exports = "<span class=\"switch\"\r\n      [class.checked]=\"checked\"\r\n      [class.disabled]=\"disabled\"\r\n      [class.switch-large]=\"size === 'large'\"\r\n      [class.switch-medium]=\"size === 'medium'\"\r\n      [class.switch-small]=\"size === 'small'\"\r\n      [style.background-color]=\"getColor()\"\r\n      [style.border-color]=\"getColor('borderColor')\">\r\n    <small [style.background]=\"getColor('switchColor')\">\r\n    </small>\r\n</span>"
