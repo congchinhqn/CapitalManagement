@@ -1205,6 +1205,7 @@ let MemberRefundListComponent = class MemberRefundListComponent {
         this.entityType = __WEBPACK_IMPORTED_MODULE_2__models_member_refund_model__["a" /* MemberRefundModel */];
         this.entity = new __WEBPACK_IMPORTED_MODULE_2__models_member_refund_model__["a" /* MemberRefundModel */]();
         this.filters = [];
+        this.originalAmount = 0;
         this.filters.push({ fieldName: 'RefundMonth1', operator: __WEBPACK_IMPORTED_MODULE_3__core_index__["OperatorType"].CONTAINS, value: `${new Date().getMonth() + 1}/${new Date().getFullYear()}` });
         this.filters.push({ fieldName: 'RefundMonth2', operator: __WEBPACK_IMPORTED_MODULE_3__core_index__["OperatorType"].CONTAINS, value: `${new Date().getMonth() + 1}/${new Date().getFullYear()}` });
         this.filters.push({ fieldName: 'RefundMonth3', operator: __WEBPACK_IMPORTED_MODULE_3__core_index__["OperatorType"].CONTAINS, value: `${new Date().getMonth() + 1}/${new Date().getFullYear()}` });
@@ -1224,7 +1225,7 @@ let MemberRefundListComponent = class MemberRefundListComponent {
         }
     }
     onEditEntity(button, entity) {
-        let amout = 1000;
+        let amout = this.originalAmount;
         let date = `${new Date().getMonth() + 1}/${new Date().getFullYear()}`;
         if (entity.RefundMonth1 == date) {
             if (entity.Refunded1)
@@ -1273,6 +1274,11 @@ let MemberRefundListComponent = class MemberRefundListComponent {
         let that = this;
         let totalAmount = (entity.OriginalAmount - entity.RefundAmount);
         that.statisticsServices.updateStatisticsMemberRefund(totalAmount);
+    }
+    onRefundAmount() {
+        this.grid.sources.forEach((item) => {
+            this.onEditEntity(null, item);
+        });
     }
 };
 __decorate([
@@ -4857,7 +4863,7 @@ module.exports = "<div class=\"row\">\r\n  <ul>\r\n    <li *ngFor=\"let item of 
 /***/ 826:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                <strong>Danh Sách Hoàn Tiền Cho Thành Viên</strong>\r\n            </div>\r\n            <div class=\"card-block\">\r\n                <gridview #grid [entity]=\"entityType\" [useCheckbox]=\"false\" [filters]=\"filters\" \r\n                          (actionEvent)=\"onActionEvent($event)\" \r\n                          (loadDataEvent)=\"onLoadDataEvent($event)\"></gridview>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                <strong>Danh Sách Hoàn Tiền Cho Thành Viên</strong>\r\n            </div>\r\n            <div class=\"card-block\">\r\n                <div class=\"row\">\r\n                    <div class=\"form-group col-sm-2 col-lg-2\">\r\n                        <label for=\"original-amount\">Số Tiền Hoàn Trả</label>\r\n                    </div>\r\n                    <div class=\"form-group col-sm-6 col-lg-6\">\r\n                        <input type=\"number\" class=\"form-control\" id=\"original-amount\" [(ngModel)]=\"originalAmount\">\r\n                    </div>\r\n                    <div class=\"form-group col-sm-4 col-lg-4\">\r\n                        <button class=\"btn btn-info\" (click)=\"onRefundAmount()\">Hoàn Tiền Tất Cả Thành Viên</button>\r\n                    </div>\r\n                </div>\r\n                <gridview #grid [entity]=\"entityType\" [useCheckbox]=\"false\" [filters]=\"filters\" (actionEvent)=\"onActionEvent($event)\" (loadDataEvent)=\"onLoadDataEvent($event)\"></gridview>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
