@@ -1291,13 +1291,15 @@ let MemberRefundListComponent = class MemberRefundListComponent {
                 return;
             entity.RefundAmount = entity.OriginalAmount;
             entity.Refunded3 = true;
-            entity.Refunded = true;
         }
-        entity.RefundAmount += amout;
-        this.updateMember(entity);
-        this.configServices.updateConfig(amout, 0);
-        this.statisticsServices.updateStatisticsMemberRefund(amout);
-        this.grid.loadData();
+        if (!entity.Refunded) {
+            entity.Refunded = true;
+            entity.RefundAmount += amout;
+            this.updateMember(entity);
+            this.configServices.updateConfig(amout, 0);
+            this.statisticsServices.updateStatisticsMemberRefund(amout);
+            this.grid.loadData();
+        }
     }
     onLoadDataEvent(data) {
         let that = this;
