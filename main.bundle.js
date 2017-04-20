@@ -816,18 +816,25 @@ let DashboardComponent = class DashboardComponent {
         this.statisticsServices = statisticsServices;
         this.OriginalAmount = 3000;
         this.TotalAmount = 0;
+        this.TotalMemberRefund = 1000;
+        this.tempDate = '';
     }
     ngOnInit() {
+        var date = new Date();
+        this.tempDate = `${date.getMonth() + 2}/${date.getFullYear()}`;
         this.configServices.loadConfig();
         this.statisticsServices.loadStatistics();
-        this.memberServices.loadStatistics();
+        this.memberServices.loadMemberRefund(this.tempDate);
     }
     onMath() {
         let that = this;
-        that.statisticsServices.entityOriginal.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
-        that.statisticsServices.entityOriginal.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
-        that.statisticsServices.entityOriginal.TotalAmountMember += that.statisticsServices.entityOriginal.TotalNewMember * that.OriginalAmount;
-        that.TotalAmount = (that.statisticsServices.entityOriginal.TotalAmountMember * (that.statisticsServices.entityOriginal.Profit / 100)) - that.statisticsServices.entityOriginal.TotalCapital;
+        if (that.memberServices.entityList && that.memberServices.entityList.length > 0) {
+            that.statisticsServices.entityOriginal.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
+            that.statisticsServices.entityOriginal.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
+            that.statisticsServices.entityOriginal.TotalAmountMember += that.statisticsServices.entityOriginal.TotalNewMember * that.OriginalAmount;
+            that.statisticsServices.entityOriginal.TotalAmountMember += that.memberServices.entityList.length * that.TotalMemberRefund;
+            that.TotalAmount = (that.statisticsServices.entityOriginal.TotalAmountMember * (that.statisticsServices.entityOriginal.Profit / 100)) - that.statisticsServices.entityOriginal.TotalCapital;
+        }
     }
     addData() {
         let that = this;
@@ -1925,6 +1932,7 @@ let MemberServices = class MemberServices {
         this.webApiServices = webApiServices;
         this.entity = new __WEBPACK_IMPORTED_MODULE_1__models_member_model__["a" /* MemberModel */]();
         this.entityList = [];
+        this.filters = [];
     }
     loadStatistics() {
         let that = this;
@@ -1933,6 +1941,23 @@ let MemberServices = class MemberServices {
                 this.entityList = res;
             });
         }, 1);
+    }
+    loadMemberRefund(refundDate) {
+        let that = this;
+        that.filters.push({ fieldName: 'RefundMonth1', operator: __WEBPACK_IMPORTED_MODULE_2__core_index__["OperatorType"].CONTAINS, value: refundDate });
+        that.filters.push({ fieldName: 'RefundMonth2', operator: __WEBPACK_IMPORTED_MODULE_2__core_index__["OperatorType"].CONTAINS, value: refundDate });
+        that.filters.push({ fieldName: 'RefundMonth3', operator: __WEBPACK_IMPORTED_MODULE_2__core_index__["OperatorType"].CONTAINS, value: refundDate });
+        that.webApiServices.getAllAsync(__WEBPACK_IMPORTED_MODULE_1__models_member_model__["a" /* MemberModel */], null, 0, that.filters).then((data) => {
+            data.dataResult.subscribe((res) => {
+                that.entityList = res.filter((item) => {
+                    for (var filter of this.filters) {
+                        if (item[filter.fieldName] === filter.value)
+                            return true;
+                    }
+                    return false;
+                });
+            });
+        });
     }
     updateMember(entityType, entity) {
         let that = this;
@@ -4745,7 +4770,7 @@ module.exports = "<app-header></app-header>\r\n<div class=\"app-body\">\r\n    <
 /***/ 826:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <ul>\r\n    <li *ngFor=\"let item of items | async\">\r\n      {{ item | json }}\r\n    </li>\r\n  </ul>\r\n</div>\r\n<div class=\"animated fadeIn\">\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-cogs bg-primary p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Vốn</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalAmountMember | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-laptop bg-info p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Hoàn Trả</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalRefundAmount | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-moon-o bg-warning p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">SL Thành Viên</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalNewMember | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-bell bg-danger p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Lợi Nhuận</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalAmount | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n      <div class=\"card\">\r\n        <div class=\"card-header\">\r\n          <strong>Tạm Tính Thống Kê Doanh Thu</strong>\r\n          <button class=\"btn btn-primary pull-right\" type=\"button\" (click)=\"onMath()\">Xem</button>\r\n        </div>\r\n        <div class=\"card-block\">\r\n          <!--<div class=\"row\">\r\n            <div class=\"form-group col-sm-2 col-lg-2\">\r\n              <label for=\"month\">Tháng</label>\r\n              <input type=\"number\" min=\"0\" max=\"12\" class=\"form-control\" id=\"month\" [(ngModel)]=\"month\">\r\n            </div>\r\n            <div class=\"form-group col-sm-4 col-lg-4\">\r\n              <label for=\"year\">Năm</label>\r\n              <input type=\"text\" min=\"2010\" max=\"2050\" class=\"form-control col-sm-8 col-lg-8\" id=\"year\" [(ngModel)]=\"year\">\r\n              <button class=\"btn btn-primary\" type=\"button\" (click)=\"onMath()\">Lất Thông Tin Hoàn Tiền Cho Thành Viên</button>\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"Profit\">Lợi Nhuận (%)</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"Profit\" [(ngModel)]=\"statisticsServices.entityOriginal.Profit\">\r\n            </div>\r\n          </div>-->\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"Profit\">Lợi Nhuận (%)</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"Profit\" [(ngModel)]=\"statisticsServices.entityOriginal.Profit\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalCapital\">Tiền Vốn</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalCapital\" [(ngModel)]=\"statisticsServices.entityOriginal.TotalCapital\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Mới</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"statisticsServices.entityOriginal.TotalNewMember\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Khởi Đầu Của Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"OriginalAmount\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-header\" *ngIf=\"TotalAmount\">\r\n          <strong>Doanh Thu Tạm Tính</strong>\r\n        </div>\r\n        <div class=\"card-block\" *ngIf=\"TotalAmount\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-12 col-lg-12\">\r\n              <label for=\"Profit\" style=\"font-size: 50px; font-weight: bolder;\">{{TotalAmount | number : '1.0-2' }}</label>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n  <ul>\r\n    <li *ngFor=\"let item of items | async\">\r\n      {{ item | json }}\r\n    </li>\r\n  </ul>\r\n</div>\r\n<div class=\"animated fadeIn\">\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-cogs bg-primary p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Vốn</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalAmountMember | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-laptop bg-info p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Hoàn Trả</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalRefundAmount | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-moon-o bg-warning p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">SL Thành Viên</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalNewMember | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-bell bg-danger p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Lợi Nhuận</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalAmount | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n      <div class=\"card\">\r\n        <div class=\"card-header\">\r\n          <strong>Tạm Tính Thống Kê Doanh Thu ({{tempDate}})</strong>\r\n          <button class=\"btn btn-primary pull-right\" type=\"button\" (click)=\"onMath()\">Xem</button>\r\n        </div>\r\n        <div class=\"card-block\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"Profit\">Lợi Nhuận (%)</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"Profit\" [(ngModel)]=\"statisticsServices.entityOriginal.Profit\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalCapital\">Tiền Vốn</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalCapital\" [(ngModel)]=\"statisticsServices.entityOriginal.TotalCapital\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Mới</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"statisticsServices.entityOriginal.TotalNewMember\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Khởi Đầu Của Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"OriginalAmount\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Hoàn Tiền</label>\r\n              <input type=\"number\" min=\"0\" readonly class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"memberServices.entityList.length\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Hoàn Lại Cho Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"TotalMemberRefund\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-header\" *ngIf=\"TotalAmount\">\r\n          <strong>Doanh Thu Tạm Tính</strong>\r\n        </div>\r\n        <div class=\"card-block\" *ngIf=\"TotalAmount\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-12 col-lg-12\">\r\n              <label for=\"Profit\" style=\"font-size: 50px; font-weight: bolder;\">{{TotalAmount | number : '1.0-2' }}</label>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
