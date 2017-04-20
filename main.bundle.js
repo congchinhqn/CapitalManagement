@@ -994,9 +994,12 @@ let MemberRefundListComponent = class MemberRefundListComponent {
         that.statisticsServices.updateStatisticsMemberRefund(totalAmount);
     }
     onRefundAmount() {
-        this.grid.sources.forEach((item) => {
-            this.onEditEntity(null, item);
-        });
+        var date = new Date();
+        if (this.month == date.getMonth() + 1 && this.year == date.getFullYear()) {
+            this.grid.sources.forEach((item) => {
+                this.onEditEntity(null, item);
+            });
+        }
     }
 };
 __decorate([
