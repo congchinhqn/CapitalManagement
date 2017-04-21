@@ -814,10 +814,13 @@ let DashboardComponent = class DashboardComponent {
         this.memberServices = memberServices;
         this.webApiServices = webApiServices;
         this.statisticsServices = statisticsServices;
-        this.OriginalAmount = 3000;
-        this.TotalAmount = 0;
-        this.TotalMemberRefund = 1000;
+        this.OriginalAmount1 = 3000;
+        this.TotalAmount1 = 0;
+        this.TotalMemberRefund1 = 1000;
         this.tempDate = '';
+        this.OriginalAmount2 = 3000;
+        this.TotalAmount2 = 0;
+        this.TotalMemberRefund2 = 1000;
     }
     ngOnInit() {
         var date = new Date();
@@ -826,14 +829,25 @@ let DashboardComponent = class DashboardComponent {
         this.statisticsServices.loadStatistics();
         this.memberServices.loadMemberRefund(this.tempDate);
     }
-    onMath() {
+    onMath1() {
         let that = this;
         if (that.memberServices.entityList && that.memberServices.entityList.length > 0) {
-            that.statisticsServices.entityOriginal.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
-            that.statisticsServices.entityOriginal.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
-            that.statisticsServices.entityOriginal.TotalAmountMember += that.statisticsServices.entityOriginal.TotalNewMember * that.OriginalAmount;
-            that.statisticsServices.entityOriginal.TotalAmountMember += that.memberServices.entityList.length * that.TotalMemberRefund;
-            that.TotalAmount = (that.statisticsServices.entityOriginal.TotalAmountMember * (that.statisticsServices.entityOriginal.Profit / 100)) - that.statisticsServices.entityOriginal.TotalCapital;
+            that.statisticsServices.entityOriginal1.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
+            that.statisticsServices.entityOriginal1.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
+            that.statisticsServices.entityOriginal1.TotalAmountMember += that.statisticsServices.entityOriginal1.TotalNewMember * that.OriginalAmount1;
+            that.statisticsServices.entityOriginal1.TotalAmountMember += that.memberServices.entityList.length * that.TotalMemberRefund1;
+            that.TotalAmount1 = (that.statisticsServices.entityOriginal1.TotalAmountMember * (that.statisticsServices.entityOriginal1.Profit / 100)) - that.statisticsServices.entityOriginal1.TotalCapital;
+        }
+    }
+    onMath2() {
+        let that = this;
+        if (that.memberServices.entityList && that.memberServices.entityList.length > 0) {
+            that.statisticsServices.entityOriginal1.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
+            that.statisticsServices.entityOriginal1.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
+            that.statisticsServices.entityOriginal1.TotalAmountMember += that.statisticsServices.entityOriginal1.TotalNewMember * that.OriginalAmount2;
+            that.statisticsServices.entityOriginal1.TotalAmountMember += that.memberServices.entityList.length * that.TotalMemberRefund2;
+            that.statisticsServices.entityOriginal2.Profit = ((that.TotalAmount2 + that.statisticsServices.entityOriginal2.TotalCapital) / that.statisticsServices.entityOriginal1.TotalAmountMember) * 100;
+            that.TotalAmount2 = (that.statisticsServices.entityOriginal1.TotalAmountMember * (that.statisticsServices.entityOriginal2.Profit / 100)) - that.statisticsServices.entityOriginal2.TotalCapital;
         }
     }
     addData() {
@@ -1582,10 +1596,11 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 let StatisticsListComponent = class StatisticsListComponent {
-    constructor(router, memberServices, configServices, webApiServices, notificationService) {
+    constructor(router, memberServices, configServices, statisticsServices, webApiServices, notificationService) {
         this.router = router;
         this.memberServices = memberServices;
         this.configServices = configServices;
+        this.statisticsServices = statisticsServices;
         this.webApiServices = webApiServices;
         this.notificationService = notificationService;
         this.entityType = __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */];
@@ -1594,11 +1609,16 @@ let StatisticsListComponent = class StatisticsListComponent {
     }
     ngOnInit() {
         this.configServices.loadConfig();
+        this.statisticsServices.loadStatistics();
     }
     onActionEvent(event) {
         let that = this;
         var item = event.data;
         var button = event.action;
+    }
+    onSave() {
+        this.statisticsServices.updateStatistics();
+        this.grid.loadData();
     }
 };
 __decorate([
@@ -1610,12 +1630,12 @@ StatisticsListComponent = __decorate([
         selector: "statistics-list",
         template: __webpack_require__(836)
     }),
-    __param(3, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["WEBAPISERVICE"])),
-    __param(4, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"])),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["b" /* MemberServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_index__["b" /* MemberServices */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* ConfigServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* ConfigServices */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__core_index__["IWebApiServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_index__["IWebApiServices"]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"]) === "function" && _f || Object])
+    __param(4, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["WEBAPISERVICE"])),
+    __param(5, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"])),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["b" /* MemberServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_index__["b" /* MemberServices */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* ConfigServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* ConfigServices */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["c" /* StatisticsServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_index__["c" /* StatisticsServices */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__core_index__["IWebApiServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_index__["IWebApiServices"]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"]) === "function" && _g || Object])
 ], StatisticsListComponent);
 
-var _a, _b, _c, _d, _e, _f;
+var _a, _b, _c, _d, _e, _f, _g;
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/statistics-list.component.js.map
 
 /***/ }),
@@ -2016,7 +2036,8 @@ let StatisticsServices = class StatisticsServices {
         this.webApiServices = webApiServices;
         this.url = 'Statistics';
         this.entity = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
-        this.entityOriginal = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
+        this.entityOriginal1 = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
+        this.entityOriginal2 = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
     }
     loadStatistics() {
         let that = this;
@@ -2029,7 +2050,8 @@ let StatisticsServices = class StatisticsServices {
             }).subscribe((res) => {
                 if (res.length > 0) {
                     this.entity = res[0];
-                    that.entityOriginal = Object.assign({}, that.entity);
+                    that.entityOriginal1 = Object.assign({}, that.entity);
+                    that.entityOriginal2 = Object.assign({}, that.entity);
                 }
             });
         }, 1);
@@ -2037,6 +2059,7 @@ let StatisticsServices = class StatisticsServices {
     addEntity() {
         let that = this;
         that.entity = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
+        that.entity.Profit = 5;
         that.entity.CreateDate = that.datePipe.transform(new Date(), 'dd/MM/yyyy');
         that.entity.CreateMonth = `${new Date().getMonth() + 1}/${new Date().getFullYear()}`;
         that.webApiServices.addEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then((result) => {
@@ -2085,6 +2108,16 @@ let StatisticsServices = class StatisticsServices {
             that.addEntity();
         that.entity.TotalRefundAmount += totalAmount;
         that.entity.TotalAmountMember -= totalAmount;
+        that.updateTotalAmount();
+        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then((result) => {
+            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
+                that.entity = result.dataResult;
+        });
+    }
+    updateStatistics() {
+        let that = this;
+        if (!that.entity)
+            that.addEntity();
         that.updateTotalAmount();
         that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then((result) => {
             if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
@@ -4773,7 +4806,7 @@ module.exports = "<app-header></app-header>\r\n<div class=\"app-body\">\r\n    <
 /***/ 826:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <ul>\r\n    <li *ngFor=\"let item of items | async\">\r\n      {{ item | json }}\r\n    </li>\r\n  </ul>\r\n</div>\r\n<div class=\"animated fadeIn\">\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-cogs bg-primary p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Vốn</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalAmountMember | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-laptop bg-info p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Hoàn Trả</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalRefundAmount | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-moon-o bg-warning p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">SL Thành Viên</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalNewMember | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-bell bg-danger p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Lợi Nhuận</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalAmount | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n      <div class=\"card\">\r\n        <div class=\"card-header\">\r\n          <strong>Tạm Tính Thống Kê Doanh Thu ({{tempDate}})</strong>\r\n          <button class=\"btn btn-primary pull-right\" type=\"button\" (click)=\"onMath()\">Xem</button>\r\n        </div>\r\n        <div class=\"card-block\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"Profit\">Lợi Nhuận (%)</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"Profit\" [(ngModel)]=\"statisticsServices.entityOriginal.Profit\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalCapital\">Tiền Vốn</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalCapital\" [(ngModel)]=\"statisticsServices.entityOriginal.TotalCapital\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Mới</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"statisticsServices.entityOriginal.TotalNewMember\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Khởi Đầu Của Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"OriginalAmount\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Hoàn Tiền</label>\r\n              <input type=\"number\" min=\"0\" readonly class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"memberServices.entityList.length\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Hoàn Lại Cho Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"TotalMemberRefund\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-header\" *ngIf=\"TotalAmount\">\r\n          <strong>Doanh Thu Tạm Tính</strong>\r\n        </div>\r\n        <div class=\"card-block\" *ngIf=\"TotalAmount\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-12 col-lg-12\">\r\n              <label for=\"Profit\" style=\"font-size: 50px; font-weight: bolder;\">{{TotalAmount | number : '1.0-2' }}</label>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n  <ul>\r\n    <li *ngFor=\"let item of items | async\">\r\n      {{ item | json }}\r\n    </li>\r\n  </ul>\r\n</div>\r\n<div class=\"animated fadeIn\">\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-cogs bg-primary p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Vốn</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalAmountMember | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-laptop bg-info p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Tiền Hoàn Trả</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalRefundAmount | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-moon-o bg-warning p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">SL Thành Viên</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalNewMember | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n\r\n    <div class=\"col-sm-6 col-lg-3\">\r\n      <div class=\"card\">\r\n        <div class=\"card-block p-1 clearfix\">\r\n          <i class=\"fa fa-bell bg-danger p-1 font-2xl mr-1 float-left\"></i>\r\n          <div class=\"text-uppercase text-muted font-weight-bold font-xs mb-0 mt-h\">Lợi Nhuận</div>\r\n          <div class=\"h5\">{{statisticsServices.entity?.TotalAmount | number : '1.0-2'}}</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!--/.col-->\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n      <div class=\"card\">\r\n        <div class=\"card-header\">\r\n          <strong>Tạm Tính Thống Kê Doanh Thu ({{tempDate}})</strong>\r\n          <button class=\"btn btn-primary pull-right\" type=\"button\" (click)=\"onMath1()\">Xem</button>\r\n        </div>\r\n        <div class=\"card-block\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"Profit\">Lợi Nhuận (%)</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"Profit\" [(ngModel)]=\"statisticsServices.entityOriginal1.Profit\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalCapital\">Tiền Vốn</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalCapital\" [(ngModel)]=\"statisticsServices.entityOriginal1.TotalCapital\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Mới</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"statisticsServices.entityOriginal1.TotalNewMember\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Khởi Đầu Của Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"OriginalAmount1\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Hoàn Tiền</label>\r\n              <input type=\"number\" min=\"0\" readonly class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"memberServices.entityList.length\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Hoàn Lại Cho Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"TotalMemberRefund1\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-header\" *ngIf=\"TotalAmount1\">\r\n          <strong>Doanh Thu Tạm Tính</strong>\r\n        </div>\r\n        <div class=\"card-block\" *ngIf=\"TotalAmount1\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-12 col-lg-12\">\r\n              <label for=\"Profit\" style=\"font-size: 50px; font-weight: bolder;\">{{TotalAmount1 | number : '1.0-2' }}</label>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n      <div class=\"card\">\r\n        <div class=\"card-header\">\r\n          <strong>Tạm Tính Lợi Nhuận % ({{tempDate}})</strong>\r\n          <button class=\"btn btn-primary pull-right\" type=\"button\" (click)=\"onMath2()\">Xem</button>\r\n        </div>\r\n        <div class=\"card-block\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"Profit\">Doanh Thu Tạm Tính</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"Profit\" [(ngModel)]=\"TotalAmount2\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalCapital\">Tiền Vốn</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalCapital\" [(ngModel)]=\"statisticsServices.entityOriginal2.TotalCapital\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Mới</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"statisticsServices.entityOriginal2.TotalNewMember\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Khởi Đầu Của Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"OriginalAmount2\">\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"TotalNewMember\">Số Lượng Thành Viên Hoàn Tiền</label>\r\n              <input type=\"number\" min=\"0\" readonly class=\"form-control\" id=\"TotalNewMember\" [(ngModel)]=\"memberServices.entityList.length\">\r\n            </div>\r\n            <div class=\"form-group col-sm-6 col-lg-6\">\r\n              <label for=\"OriginalAmount\">Tiền Hoàn Lại Cho Thành Viên</label>\r\n              <input type=\"number\" min=\"0\" class=\"form-control\" id=\"OriginalAmount\" [(ngModel)]=\"TotalMemberRefund2\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-header\" *ngIf=\"statisticsServices.entityOriginal2.Profit\">\r\n          <strong>Lợi Nhuận (%)</strong>\r\n        </div>\r\n        <div class=\"card-block\" *ngIf=\"statisticsServices.entityOriginal2.Profit\">\r\n          <div class=\"row\">\r\n            <div class=\"form-group col-sm-12 col-lg-12\">\r\n              <label for=\"Profit\" style=\"font-size: 50px; font-weight: bolder;\">{{statisticsServices.entityOriginal2.Profit | number : '1.0-2' }}</label>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -4843,7 +4876,7 @@ module.exports = "<div class=\"sidebar\">\r\n    <nav class=\"sidebar-nav\">\r\n
 /***/ 836:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                <strong>Thống Kê Doanh Thu</strong>\r\n            </div>\r\n            <div class=\"card-block\">\r\n                <gridview #grid [entity]=\"entityType\" [useCheckbox]=\"false\" [filters]=\"filters\" \r\n                          [orderbyName]=\"'CreateMonth'\"\r\n                          (actionEvent)=\"onActionEvent($event)\" \r\n                          (loadDataEvent)=\"onLoadDataEvent($event)\"></gridview>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                <strong>Thống Kê Doanh Thu</strong>\r\n                <button class=\"btn btn-primary pull-right\" type=\"button\" (click)=\"onSave()\">Lưu</button>\r\n            </div>\r\n            <div class=\"card-block\">\r\n                <div class=\"row\">\r\n                    <div class=\"form-group col-sm-6 col-lg-6\">\r\n                        <label for=\"Profit\">Lợi Nhuận (%)</label>\r\n                        <input type=\"number\" min=\"0\" class=\"form-control\" id=\"Profit\" [(ngModel)]=\"statisticsServices.entity.Profit\">\r\n                    </div>\r\n                    <div class=\"form-group col-sm-6 col-lg-6\">\r\n                        <label for=\"TotalCapital\">Tiền Vốn</label>\r\n                        <input type=\"number\" min=\"0\" class=\"form-control\" id=\"TotalCapital\" [(ngModel)]=\"statisticsServices.entity.TotalCapital\">\r\n                    </div>\r\n                </div>\r\n                <gridview #grid [entity]=\"entityType\" [useCheckbox]=\"false\" [filters]=\"filters\" [orderbyName]=\"'CreateMonth'\" (actionEvent)=\"onActionEvent($event)\"\r\n                    (loadDataEvent)=\"onLoadDataEvent($event)\"></gridview>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
