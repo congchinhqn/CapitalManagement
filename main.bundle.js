@@ -3,7 +3,7 @@ webpackJsonp([1,5],{
 /***/ 1114:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(461);
+module.exports = __webpack_require__(463);
 
 
 /***/ }),
@@ -198,7 +198,7 @@ var WEBAPISERVICE = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["OpaqueToken
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__dom_dom_service__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__notification_service__ = __webpack_require__(631);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__notification_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__state_event_service__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__state_event_service__ = __webpack_require__(391);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__state_event_service__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_api_service__ = __webpack_require__(630);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__local_api_service__["a"]; });
@@ -273,33 +273,33 @@ var WEBAPISERVICE = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["OpaqueToken
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_component__ = __webpack_require__(591);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_component__ = __webpack_require__(593);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__app_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__admin_admin_component__ = __webpack_require__(578);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__admin_admin_component__ = __webpack_require__(580);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__admin_admin_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__admin_navigation_sidebar_component__ = __webpack_require__(588);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__admin_navigation_sidebar_component__ = __webpack_require__(590);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__admin_navigation_sidebar_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__admin_navigation_header_component__ = __webpack_require__(587);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__admin_navigation_header_component__ = __webpack_require__(589);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__admin_navigation_header_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_navigation_footer_component__ = __webpack_require__(586);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_navigation_footer_component__ = __webpack_require__(588);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__admin_navigation_footer_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__admin_dashboard_component__ = __webpack_require__(579);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__admin_dashboard_component__ = __webpack_require__(581);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__admin_dashboard_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__admin_member_member_main_component__ = __webpack_require__(585);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__admin_member_member_main_component__ = __webpack_require__(587);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_6__admin_member_member_main_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__admin_member_member_list_component__ = __webpack_require__(584);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__admin_member_member_list_component__ = __webpack_require__(586);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_7__admin_member_member_list_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__admin_member_add_edit_member_component__ = __webpack_require__(583);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__admin_member_add_edit_member_component__ = __webpack_require__(585);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_8__admin_member_add_edit_member_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__admin_member_refund_member_refund_main_component__ = __webpack_require__(581);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__admin_member_refund_member_refund_main_component__ = __webpack_require__(583);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_9__admin_member_refund_member_refund_main_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__admin_member_refund_member_refund_list_component__ = __webpack_require__(580);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__admin_member_refund_member_refund_list_component__ = __webpack_require__(582);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_10__admin_member_refund_member_refund_list_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__admin_member_refund_member_refunded_list_component__ = __webpack_require__(582);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__admin_member_refund_member_refunded_list_component__ = __webpack_require__(584);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_11__admin_member_refund_member_refunded_list_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__admin_statistics_statistics_main_component__ = __webpack_require__(590);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__admin_statistics_statistics_main_component__ = __webpack_require__(592);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_12__admin_statistics_statistics_main_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__admin_statistics_statistics_list_component__ = __webpack_require__(589);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__admin_statistics_statistics_list_component__ = __webpack_require__(591);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_13__admin_statistics_statistics_list_component__["a"]; });
 
 
@@ -675,6 +675,225 @@ AppRoutingModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_config_model__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_index__ = __webpack_require__(21);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigServices; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+
+
+var ConfigServices = (function () {
+    function ConfigServices(webApiServices) {
+        this.webApiServices = webApiServices;
+        this.entity = new __WEBPACK_IMPORTED_MODULE_1__models_config_model__["a" /* ConfigModel */]();
+    }
+    ConfigServices.prototype.loadConfig = function () {
+        var that = this;
+        setTimeout(function (_) {
+            that.webApiServices.getSingleAsync(__WEBPACK_IMPORTED_MODULE_1__models_config_model__["a" /* ConfigModel */], 'b806bb31-ab9b-44d7-a111-f359a8260a48').then(function (result) {
+                if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_2__core_index__["ResultStatus"].Successful)
+                    result.dataResult.subscribe(function (res) {
+                        that.entity = res;
+                    });
+            });
+        }, 1);
+    };
+    ConfigServices.prototype.updateConfig = function (totalAmountOld, totalAmountNew) {
+        var that = this;
+        that.entity.TotalAmount -= totalAmountOld;
+        that.entity.TotalAmount += totalAmountNew;
+        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_1__models_config_model__["a" /* ConfigModel */], that.entity).then(function (result) {
+            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_2__core_index__["ResultStatus"].Successful)
+                that.entity = result.dataResult;
+        });
+    };
+    ConfigServices.prototype.updateTotalMember = function () {
+        var that = this;
+        that.entity.TotalMember += 1;
+        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_1__models_config_model__["a" /* ConfigModel */], that.entity).then(function (result) {
+            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_2__core_index__["ResultStatus"].Successful)
+                that.entity = result.dataResult;
+        });
+    };
+    return ConfigServices;
+}());
+ConfigServices = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_2__core_index__["WEBAPISERVICE"])),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__core_index__["IWebApiServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_index__["IWebApiServices"]) === "function" && _a || Object])
+], ConfigServices);
+
+var _a;
+//# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/config.service.js.map
+
+/***/ }),
+
+/***/ 390:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_service__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_statistic_model__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_index__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2__ = __webpack_require__(186);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StatisticsServices; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+
+
+
+
+
+var StatisticsServices = (function () {
+    function StatisticsServices(fbService, datePipe, configServices, webApiServices) {
+        this.fbService = fbService;
+        this.datePipe = datePipe;
+        this.configServices = configServices;
+        this.webApiServices = webApiServices;
+        this.url = 'Statistics';
+        this.entity = new __WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */]();
+        this.entityOriginal1 = new __WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */]();
+        this.entityOriginal2 = new __WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */]();
+    }
+    StatisticsServices.prototype.loadStatistics = function () {
+        var _this = this;
+        var that = this;
+        setTimeout(function (_) {
+            that.fbService.database.list(that.url, {
+                query: {
+                    orderByChild: 'CreateMonth',
+                    equalTo: new Date().getMonth() + 1 + "/" + new Date().getFullYear()
+                }
+            }).subscribe(function (res) {
+                if (res.length > 0) {
+                    _this.entity = res[0];
+                    that.entityOriginal1 = Object.assign({}, that.entity);
+                    that.entityOriginal2 = Object.assign({}, that.entity);
+                }
+                else {
+                    that.addEntity();
+                }
+            });
+        }, 1);
+    };
+    StatisticsServices.prototype.addEntity = function () {
+        var that = this;
+        if (!that.entity.Id) {
+            that.entity = new __WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */]();
+            that.entity.Profit = 0;
+            that.entity.TotalAmountMember = that.configServices.entity.TotalAmount;
+            that.entity.CreateDate = that.datePipe.transform(new Date(), 'dd/MM/yyyy');
+            that.entity.CreateMonth = new Date().getMonth() + 1 + "/" + new Date().getFullYear();
+            that.webApiServices.addEntityAsync(__WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
+                if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_4__core_index__["ResultStatus"].Successful)
+                    that.entity = result.dataResult;
+            });
+        }
+    };
+    StatisticsServices.prototype.addEntityBasic = function (month, year) {
+        var that = this;
+        that.entity = new __WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */]();
+        that.entity.Profit = 0;
+        that.entity.CreateDate = new Date().getDay() + "/" + month + "/" + year;
+        that.entity.CreateMonth = month + "/" + year;
+        that.webApiServices.addEntityAsync(__WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
+            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_4__core_index__["ResultStatus"].Successful)
+                that.entity = result.dataResult;
+        });
+    };
+    StatisticsServices.prototype.updateStatisticsMemberNew = function (totalAmount) {
+        var that = this;
+        if (!that.entity.Id)
+            that.addEntity();
+        that.entity.TotalNewMember += 1;
+        that.entity.TotalAmountMember += totalAmount;
+        that.updateTotalAmount();
+        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
+            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_4__core_index__["ResultStatus"].Successful)
+                that.entity = result.dataResult;
+        });
+    };
+    StatisticsServices.prototype.updateStatisticsMemberUpdate = function (totalAmountOld, totalAmountNew) {
+        var that = this;
+        if (!that.entity.Id)
+            that.addEntity();
+        that.entity.TotalAmountMember = that.configServices.entity.TotalAmount;
+        that.updateTotalAmount();
+        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
+            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_4__core_index__["ResultStatus"].Successful)
+                that.entity = result.dataResult;
+        });
+    };
+    StatisticsServices.prototype.updateStatisticsMemberRefund = function (totalAmount) {
+        var that = this;
+        if (!that.entity.Id)
+            that.addEntity();
+        that.entity.TotalRefundAmount += totalAmount;
+        that.entity.TotalAmountMember -= totalAmount;
+        that.updateTotalAmount();
+        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
+            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_4__core_index__["ResultStatus"].Successful)
+                that.entity = result.dataResult;
+        });
+    };
+    StatisticsServices.prototype.updateStatistics = function () {
+        var that = this;
+        if (!that.entity.Id)
+            that.addEntity();
+        that.updateTotalAmount();
+        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_3__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
+            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_4__core_index__["ResultStatus"].Successful)
+                that.entity = result.dataResult;
+        });
+    };
+    StatisticsServices.prototype.updateTotalAmount = function () {
+        var that = this;
+        that.entity.TotalAmount = (that.entity.TotalAmountMember * (that.entity.Profit / 100)) - that.entity.TotalCapital;
+    };
+    return StatisticsServices;
+}());
+StatisticsServices = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
+    __param(3, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_4__core_index__["WEBAPISERVICE"])),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_5_angularfire2__["b" /* AngularFire */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_angularfire2__["b" /* AngularFire */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_common__["d" /* DatePipe */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__config_service__["a" /* ConfigServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__config_service__["a" /* ConfigServices */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__core_index__["IWebApiServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_index__["IWebApiServices"]) === "function" && _d || Object])
+], StatisticsServices);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/statistics.service.js.map
+
+/***/ }),
+
+/***/ 391:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StateEventService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -731,7 +950,7 @@ StateEventService = __decorate([
 
 /***/ }),
 
-/***/ 460:
+/***/ 462:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -740,19 +959,19 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 460;
+webpackEmptyContext.id = 462;
 
 
 /***/ }),
 
-/***/ 461:
+/***/ 463:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_modules_app_module__ = __webpack_require__(592);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_modules_app_module__ = __webpack_require__(594);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(647);
 
 
@@ -766,7 +985,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 578:
+/***/ 580:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -799,7 +1018,7 @@ AdminComponent = __decorate([
 
 /***/ }),
 
-/***/ 579:
+/***/ 581:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -848,23 +1067,21 @@ var DashboardComponent = (function () {
     };
     DashboardComponent.prototype.onMath1 = function () {
         var that = this;
-        if (that.memberServices.entityList && that.memberServices.entityList.length > 0) {
-            that.statisticsServices.entityOriginal1.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
-            that.statisticsServices.entityOriginal1.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
-            that.statisticsServices.entityOriginal1.TotalAmountMember += that.statisticsServices.entityOriginal1.TotalNewMember * that.OriginalAmount1;
+        that.statisticsServices.entityOriginal1.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
+        that.statisticsServices.entityOriginal1.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
+        that.statisticsServices.entityOriginal1.TotalAmountMember += that.statisticsServices.entityOriginal1.TotalNewMember * that.OriginalAmount1;
+        if (that.memberServices.entityList && that.memberServices.entityList.length > 0)
             that.statisticsServices.entityOriginal1.TotalAmountMember += that.memberServices.entityList.length * that.TotalMemberRefund1;
-            that.TotalAmount1 = (that.statisticsServices.entityOriginal1.TotalAmountMember * (that.statisticsServices.entityOriginal1.Profit / 100)) - that.statisticsServices.entityOriginal1.TotalCapital;
-        }
+        that.TotalAmount1 = (that.statisticsServices.entityOriginal1.TotalAmountMember * (that.statisticsServices.entityOriginal1.Profit / 100)) - that.statisticsServices.entityOriginal1.TotalCapital;
     };
     DashboardComponent.prototype.onMath2 = function () {
         var that = this;
-        if (that.memberServices.entityList && that.memberServices.entityList.length > 0) {
-            that.statisticsServices.entityOriginal1.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
-            that.statisticsServices.entityOriginal1.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
-            that.statisticsServices.entityOriginal1.TotalAmountMember += that.statisticsServices.entityOriginal1.TotalNewMember * that.OriginalAmount2;
+        that.statisticsServices.entityOriginal1.TotalAmountMember = that.statisticsServices.entity.TotalAmountMember;
+        that.statisticsServices.entityOriginal1.TotalAmountMember -= that.statisticsServices.entity.TotalNewMember * 3000;
+        that.statisticsServices.entityOriginal1.TotalAmountMember += that.statisticsServices.entityOriginal1.TotalNewMember * that.OriginalAmount2;
+        if (that.memberServices.entityList && that.memberServices.entityList.length > 0)
             that.statisticsServices.entityOriginal1.TotalAmountMember += that.memberServices.entityList.length * that.TotalMemberRefund2;
-            that.Profit = ((that.TotalAmount2 + that.statisticsServices.entityOriginal2.TotalCapital) / that.statisticsServices.entityOriginal1.TotalAmountMember) * 100;
-        }
+        that.Profit = ((that.TotalAmount2 + that.statisticsServices.entityOriginal2.TotalCapital) / that.statisticsServices.entityOriginal1.TotalAmountMember) * 100;
     };
     DashboardComponent.prototype.addData = function () {
         var that = this;
@@ -904,7 +1121,7 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 580:
+/***/ 582:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -992,8 +1209,8 @@ var MemberRefundListComponent = (function () {
             entity.Refunded = entity.Refunded3;
             entity.RefundAmount += amount;
             this.updateMember(entity);
-            this.configServices.updateConfig(amount, 0);
             this.statisticsServices.updateStatisticsMemberRefund(amount);
+            this.configServices.updateConfig(amount, 0);
             this.grid.loadData();
         }
     };
@@ -1054,7 +1271,7 @@ var _a, _b, _c, _d, _e, _f;
 
 /***/ }),
 
-/***/ 581:
+/***/ 583:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1087,7 +1304,7 @@ MemberRefundMainComponent = __decorate([
 
 /***/ }),
 
-/***/ 582:
+/***/ 584:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1221,7 +1438,7 @@ var _a, _b, _c, _d, _e, _f;
 
 /***/ }),
 
-/***/ 583:
+/***/ 585:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1302,8 +1519,8 @@ var AddOrEditMemberComponent = (function (_super) {
                 that.entityId = params['id'];
                 that.loading = that.entityId != null;
                 that.getEntityById(that.entityId);
-                that.configServices.loadConfig();
                 that.statisticsServices.loadStatistics();
+                that.configServices.loadConfig();
             });
         }
         catch (e) { }
@@ -1326,6 +1543,7 @@ var AddOrEditMemberComponent = (function (_super) {
                 that.entity.CreateDate = that.datePipe.transform(new Date(), 'dd/MM/yyyy HH:mm:ss');
                 that.statisticsServices.updateStatisticsMemberNew(that.entity.OriginalAmount);
                 that.updateConfig();
+                that.configServices.updateTotalMember();
                 that.addEntity();
             }
         }
@@ -1363,15 +1581,16 @@ var _a, _b, _c, _d, _e, _f, _g, _h;
 
 /***/ }),
 
-/***/ 584:
+/***/ 586:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_member_model__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_index__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_index__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__services_statistics_service__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_member_model__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_index__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_index__ = __webpack_require__(87);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MemberListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1390,19 +1609,21 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
+
 var MemberListComponent = (function () {
-    function MemberListComponent(router, configServices, webApiServices, notificationService) {
+    function MemberListComponent(router, configServices, statisticsServices, webApiServices, notificationService) {
         this.router = router;
         this.configServices = configServices;
+        this.statisticsServices = statisticsServices;
         this.webApiServices = webApiServices;
         this.notificationService = notificationService;
-        this.entityType = __WEBPACK_IMPORTED_MODULE_2__models_member_model__["a" /* MemberModel */];
-        this.entity = new __WEBPACK_IMPORTED_MODULE_2__models_member_model__["a" /* MemberModel */]();
+        this.entityType = __WEBPACK_IMPORTED_MODULE_3__models_member_model__["a" /* MemberModel */];
+        this.entity = new __WEBPACK_IMPORTED_MODULE_3__models_member_model__["a" /* MemberModel */]();
         this.filters = [];
         this.month = 0;
         this.year = 0;
         if (this.month > 0 && this.month <= 12)
-            this.filters.push({ fieldName: 'CreateMonth', operator: __WEBPACK_IMPORTED_MODULE_3__core_index__["OperatorType"].CONTAINS, value: this.month + "/" + this.year });
+            this.filters.push({ fieldName: 'CreateMonth', operator: __WEBPACK_IMPORTED_MODULE_4__core_index__["OperatorType"].CONTAINS, value: this.month + "/" + this.year });
     }
     MemberListComponent.prototype.ngOnInit = function () {
         this.configServices.loadConfig();
@@ -1412,13 +1633,13 @@ var MemberListComponent = (function () {
         var item = event.data;
         var button = event.action;
         switch (button.Action) {
-            case __WEBPACK_IMPORTED_MODULE_3__core_index__["ButtonActionType"].Add:
+            case __WEBPACK_IMPORTED_MODULE_4__core_index__["ButtonActionType"].Add:
                 that.onAddEntity(button);
                 break;
-            case __WEBPACK_IMPORTED_MODULE_3__core_index__["ButtonActionType"].Edit:
+            case __WEBPACK_IMPORTED_MODULE_4__core_index__["ButtonActionType"].Edit:
                 that.onEditEntity(button, item);
                 break;
-            case __WEBPACK_IMPORTED_MODULE_3__core_index__["ButtonActionType"].Delete:
+            case __WEBPACK_IMPORTED_MODULE_4__core_index__["ButtonActionType"].Delete:
                 that.onDeleteEntity(item);
                 break;
         }
@@ -1433,14 +1654,15 @@ var MemberListComponent = (function () {
     MemberListComponent.prototype.onDeleteEntity = function (entity) {
         var that = this;
         if (entity) {
-            that.webApiServices.deleteEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_member_model__["a" /* MemberModel */], entity.Id).then(function (result) {
-                if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
+            that.webApiServices.deleteEntityAsync(__WEBPACK_IMPORTED_MODULE_3__models_member_model__["a" /* MemberModel */], entity.Id).then(function (result) {
+                if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_4__core_index__["ResultStatus"].Successful)
                     that.notificationService.alertEvent.next({
                         severity: 'success',
                         summary: "Thông Báo",
                         detail: "Đã hủy bỏ thành viên thành công"
                     });
                 that.updateConfig(entity);
+                that.updateStatistics(entity);
                 that.grid.loadData();
             });
         }
@@ -1449,7 +1671,7 @@ var MemberListComponent = (function () {
         var that = this;
         that.filters = [];
         if (that.month > 0 && that.month <= 12)
-            this.filters.push({ fieldName: 'CreateMonth', operator: __WEBPACK_IMPORTED_MODULE_3__core_index__["OperatorType"].CONTAINS, value: this.month + "/" + this.year });
+            this.filters.push({ fieldName: 'CreateMonth', operator: __WEBPACK_IMPORTED_MODULE_4__core_index__["OperatorType"].CONTAINS, value: this.month + "/" + this.year });
         that.grid.loadData();
     };
     MemberListComponent.prototype.updateConfig = function (entity) {
@@ -1457,28 +1679,33 @@ var MemberListComponent = (function () {
         var totalAmountOld = (entity.OriginalAmount - entity.RefundAmount);
         that.configServices.updateConfig(totalAmountOld, 0);
     };
+    MemberListComponent.prototype.updateStatistics = function (entity) {
+        var that = this;
+        var totalAmountOld = (entity.OriginalAmount - entity.RefundAmount);
+        that.statisticsServices.updateStatisticsMemberUpdate(totalAmountOld, 0);
+    };
     return MemberListComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])("grid"),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__core_index__["GridViewControl"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_index__["GridViewControl"]) === "function" && _a || Object)
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewChild"])("grid"),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__core_index__["GridViewControl"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_index__["GridViewControl"]) === "function" && _a || Object)
 ], MemberListComponent.prototype, "grid", void 0);
 MemberListComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
         selector: "member-list",
         template: __webpack_require__(830)
     }),
-    __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["WEBAPISERVICE"])),
-    __param(3, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"])),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* ConfigServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* ConfigServices */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__core_index__["IWebApiServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_index__["IWebApiServices"]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_index__["NotificationService"]) === "function" && _e || Object])
+    __param(3, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_4__core_index__["WEBAPISERVICE"])),
+    __param(4, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_4__core_index__["NotificationService"])),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_index__["a" /* ConfigServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_index__["a" /* ConfigServices */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__services_statistics_service__["a" /* StatisticsServices */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__services_statistics_service__["a" /* StatisticsServices */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__core_index__["IWebApiServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_index__["IWebApiServices"]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__core_index__["NotificationService"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__core_index__["NotificationService"]) === "function" && _f || Object])
 ], MemberListComponent);
 
-var _a, _b, _c, _d, _e;
+var _a, _b, _c, _d, _e, _f;
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/member-list.component.js.map
 
 /***/ }),
 
-/***/ 585:
+/***/ 587:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1511,7 +1738,7 @@ MemberMainComponent = __decorate([
 
 /***/ }),
 
-/***/ 586:
+/***/ 588:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1544,7 +1771,7 @@ FooterComponent = __decorate([
 
 /***/ }),
 
-/***/ 587:
+/***/ 589:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1580,7 +1807,7 @@ HeaderComponent = __decorate([
 
 /***/ }),
 
-/***/ 588:
+/***/ 590:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1613,7 +1840,7 @@ SidebarComponent = __decorate([
 
 /***/ }),
 
-/***/ 589:
+/***/ 591:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1686,7 +1913,7 @@ var _a, _b, _c, _d, _e, _f, _g;
 
 /***/ }),
 
-/***/ 590:
+/***/ 592:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1719,7 +1946,7 @@ StatisticsMainComponent = __decorate([
 
 /***/ }),
 
-/***/ 591:
+/***/ 593:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1775,7 +2002,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 592:
+/***/ 594:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1785,7 +2012,7 @@ var _a, _b, _c;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dynamic__ = __webpack_require__(367);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__capital_module__ = __webpack_require__(593);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__capital_module__ = __webpack_require__(595);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__share_module__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__control_module__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routings_app_routing__ = __webpack_require__(388);
@@ -1856,7 +2083,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 593:
+/***/ 595:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1917,69 +2144,7 @@ CapitalModule = __decorate([
 
 /***/ }),
 
-/***/ 594:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_config_model__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_index__ = __webpack_require__(21);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigServices; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-
-
-
-
-var ConfigServices = (function () {
-    function ConfigServices(webApiServices) {
-        this.webApiServices = webApiServices;
-        this.entity = new __WEBPACK_IMPORTED_MODULE_1__models_config_model__["a" /* ConfigModel */]();
-    }
-    ConfigServices.prototype.loadConfig = function () {
-        var that = this;
-        setTimeout(function (_) {
-            that.webApiServices.getSingleAsync(__WEBPACK_IMPORTED_MODULE_1__models_config_model__["a" /* ConfigModel */], 'b806bb31-ab9b-44d7-a111-f359a8260a48').then(function (result) {
-                if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_2__core_index__["ResultStatus"].Successful)
-                    result.dataResult.subscribe(function (res) {
-                        that.entity = res;
-                    });
-            });
-        }, 1);
-    };
-    ConfigServices.prototype.updateConfig = function (totalAmountOld, totalAmountNew) {
-        var that = this;
-        that.entity.TotalAmount -= totalAmountOld;
-        that.entity.TotalAmount += totalAmountNew;
-        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_1__models_config_model__["a" /* ConfigModel */], that.entity).then(function (result) {
-            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_2__core_index__["ResultStatus"].Successful)
-                that.entity = result.dataResult;
-        });
-    };
-    return ConfigServices;
-}());
-ConfigServices = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_2__core_index__["WEBAPISERVICE"])),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__core_index__["IWebApiServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__core_index__["IWebApiServices"]) === "function" && _a || Object])
-], ConfigServices);
-
-var _a;
-//# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/config.service.js.map
-
-/***/ }),
-
-/***/ 595:
+/***/ 596:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2058,147 +2223,6 @@ MemberServices = __decorate([
 
 var _a, _b;
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/member.service.js.map
-
-/***/ }),
-
-/***/ 596:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__ = __webpack_require__(386);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_index__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2__ = __webpack_require__(186);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StatisticsServices; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-
-
-
-
-
-
-var StatisticsServices = (function () {
-    function StatisticsServices(fbService, datePipe, webApiServices) {
-        this.fbService = fbService;
-        this.datePipe = datePipe;
-        this.webApiServices = webApiServices;
-        this.url = 'Statistics';
-        this.entity = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
-        this.entityOriginal1 = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
-        this.entityOriginal2 = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
-    }
-    StatisticsServices.prototype.loadStatistics = function () {
-        var _this = this;
-        var that = this;
-        setTimeout(function (_) {
-            that.fbService.database.list(that.url, {
-                query: {
-                    orderByChild: 'CreateMonth',
-                    equalTo: new Date().getMonth() + 1 + "/" + new Date().getFullYear()
-                }
-            }).subscribe(function (res) {
-                if (res.length > 0) {
-                    _this.entity = res[0];
-                    that.entityOriginal1 = Object.assign({}, that.entity);
-                    that.entityOriginal2 = Object.assign({}, that.entity);
-                }
-            });
-        }, 1);
-    };
-    StatisticsServices.prototype.addEntity = function () {
-        var that = this;
-        that.entity = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
-        that.entity.Profit = 5;
-        that.entity.CreateDate = that.datePipe.transform(new Date(), 'dd/MM/yyyy');
-        that.entity.CreateMonth = new Date().getMonth() + 1 + "/" + new Date().getFullYear();
-        that.webApiServices.addEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
-            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
-                that.entity = result.dataResult;
-        });
-    };
-    StatisticsServices.prototype.addEntityBasic = function (month, year) {
-        var that = this;
-        that.entity = new __WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */]();
-        that.entity.Profit = 5;
-        that.entity.CreateDate = new Date().getDay() + "/" + month + "/" + year;
-        that.entity.CreateMonth = month + "/" + year;
-        that.webApiServices.addEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
-            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
-                that.entity = result.dataResult;
-        });
-    };
-    StatisticsServices.prototype.updateStatisticsMemberNew = function (totalAmount) {
-        var that = this;
-        if (!that.entity)
-            that.addEntity();
-        that.entity.TotalNewMember += 1;
-        that.entity.TotalAmountMember += totalAmount;
-        that.updateTotalAmount();
-        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
-            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
-                that.entity = result.dataResult;
-        });
-    };
-    StatisticsServices.prototype.updateStatisticsMemberUpdate = function (totalAmountOld, totalAmountNew) {
-        var that = this;
-        if (!that.entity)
-            that.addEntity();
-        that.entity.TotalAmountMember -= totalAmountOld;
-        that.entity.TotalAmountMember += totalAmountNew;
-        that.updateTotalAmount();
-        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
-            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
-                that.entity = result.dataResult;
-        });
-    };
-    StatisticsServices.prototype.updateStatisticsMemberRefund = function (totalAmount) {
-        var that = this;
-        if (!that.entity)
-            that.addEntity();
-        that.entity.TotalRefundAmount += totalAmount;
-        that.entity.TotalAmountMember -= totalAmount;
-        that.updateTotalAmount();
-        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
-            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
-                that.entity = result.dataResult;
-        });
-    };
-    StatisticsServices.prototype.updateStatistics = function () {
-        var that = this;
-        if (!that.entity)
-            that.addEntity();
-        that.updateTotalAmount();
-        that.webApiServices.updateEntityAsync(__WEBPACK_IMPORTED_MODULE_2__models_statistic_model__["a" /* StatisticsModel */], that.entity).then(function (result) {
-            if (result.resultStatus == __WEBPACK_IMPORTED_MODULE_3__core_index__["ResultStatus"].Successful)
-                that.entity = result.dataResult;
-        });
-    };
-    StatisticsServices.prototype.updateTotalAmount = function () {
-        var that = this;
-        that.entity.TotalAmount = (that.entity.TotalAmountMember * (that.entity.Profit / 100)) - that.entity.TotalCapital;
-    };
-    return StatisticsServices;
-}());
-StatisticsServices = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __param(2, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__core_index__["WEBAPISERVICE"])),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4_angularfire2__["b" /* AngularFire */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_angularfire2__["b" /* AngularFire */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common__["d" /* DatePipe */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__core_index__["IWebApiServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__core_index__["IWebApiServices"]) === "function" && _c || Object])
-], StatisticsServices);
-
-var _a, _b, _c;
-//# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/statistics.service.js.map
 
 /***/ }),
 
@@ -2459,7 +2483,7 @@ var _a, _b, _c, _d;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(72);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__ = __webpack_require__(433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__ = __webpack_require__(435);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_filter__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BreadcrumbsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4303,7 +4327,7 @@ NotificationService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_setting__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__state_event_service__ = __webpack_require__(389);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__state_event_service__ = __webpack_require__(391);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WebApiServices; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5092,11 +5116,11 @@ module.exports = "<span class=\"switch\"\r\n      [class.checked]=\"checked\"\r\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_service__ = __webpack_require__(594);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_service__ = __webpack_require__(389);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__config_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__member_service__ = __webpack_require__(595);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__member_service__ = __webpack_require__(596);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__member_service__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__statistics_service__ = __webpack_require__(596);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__statistics_service__ = __webpack_require__(390);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__statistics_service__["a"]; });
 
 
