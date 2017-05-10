@@ -558,7 +558,7 @@ var StatisticsModel = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__share_module__ = __webpack_require__(266);
@@ -746,7 +746,7 @@ var _a;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_service__ = __webpack_require__(389);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_statistic_model__ = __webpack_require__(386);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_index__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angularfire2__ = __webpack_require__(186);
@@ -1443,7 +1443,7 @@ var _a, _b, _c, _d, _e, _f;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_member_model__ = __webpack_require__(181);
@@ -1540,7 +1540,7 @@ var AddOrEditMemberComponent = (function (_super) {
                 that.entity.RefundMonth1 = (month + 3) > 12 ? (month + 3) - 12 + "/" + (new Date().getFullYear() + 1) : (month + 3) + "/" + new Date().getFullYear();
                 that.entity.RefundMonth2 = (month + 6) > 12 ? (month + 6) - 12 + "/" + (new Date().getFullYear() + 1) : (month + 6) + "/" + new Date().getFullYear();
                 that.entity.RefundMonth3 = (month + 9) > 12 ? (month + 9) - 12 + "/" + (new Date().getFullYear() + 1) : (month + 9) + "/" + new Date().getFullYear();
-                that.entity.CreateDate = that.datePipe.transform(new Date(), 'dd/MM/yyyy HH:mm:ss');
+                that.entity.CreateDate = that.datePipe.transform(new Date(), 'dd/MM/yyyy');
                 that.statisticsServices.updateStatisticsMemberNew(that.entity.OriginalAmount);
                 that.updateConfig();
                 that.configServices.updateTotalMember();
@@ -2007,7 +2007,7 @@ var _a, _b, _c;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dynamic__ = __webpack_require__(367);
@@ -2088,7 +2088,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_dyna
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_module__ = __webpack_require__(387);
@@ -2546,6 +2546,7 @@ var _a, _b;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(37);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DatepickerControl; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2558,13 +2559,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var DatepickerControl = DatepickerControl_1 = (function () {
-    function DatepickerControl(element, zone) {
+    function DatepickerControl(element, datePipe, zone) {
         this.element = element;
+        this.datePipe = datePipe;
         this.zone = zone;
         this.placeholder = "Datepicker";
         this.useTime = false;
         this.classDate = "picker_3";
+        this.formatDate = "DD/MM/YYYY";
         this.id = "";
         this.onChangeCallback = function (_) { };
         this.onTouchedCallback = function () { };
@@ -2574,9 +2578,13 @@ var DatepickerControl = DatepickerControl_1 = (function () {
         this.initDatepicker();
     };
     DatepickerControl.prototype.writeValue = function (value) {
-        if (value !== undefined) {
-            this.initDatepicker();
-            this.dateControl.data('daterangepicker').setStartDate(value);
+        if (value && value !== undefined) {
+            var valueSlip = value.split('/');
+            var date = new Date(valueSlip[2], valueSlip[1] - 1, valueSlip[0]);
+            var minDate = new Date(valueSlip[2], valueSlip[1] - 1, 1);
+            var maxDate = new Date(valueSlip[2], valueSlip[1], 1).setDate(-1);
+            this.initDatepicker(minDate, maxDate);
+            this.dateControl.data('daterangepicker').setStartDate(date);
         }
     };
     DatepickerControl.prototype.registerOnChange = function (fn) {
@@ -2585,21 +2593,27 @@ var DatepickerControl = DatepickerControl_1 = (function () {
     DatepickerControl.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    DatepickerControl.prototype.initDatepicker = function () {
+    DatepickerControl.prototype.initDatepicker = function (minDate, maxDate) {
         var that = this;
         if (!that.dateControl) {
             that.dateControl = $("#" + that.id).daterangepicker({
                 singleDatePicker: true,
                 timePicker: that.useTime,
-                singleClasses: that.classDate
+                singleClasses: that.classDate,
+                minDate: minDate ? minDate : null,
+                maxDate: maxDate ? maxDate : null,
+                locale: {
+                    format: that.formatDate
+                }
             }, function (start, end, label) {
                 that.selectedItem(end);
             });
         }
     };
     DatepickerControl.prototype.selectedItem = function (value) {
-        this.onChangeCallback(value);
-        this.onTouchedCallback(value);
+        var dateStr = this.datePipe.transform(value, 'dd/MM/yyyy');
+        this.onChangeCallback(dateStr);
+        this.onTouchedCallback(dateStr);
     };
     return DatepickerControl;
 }());
@@ -2614,18 +2628,26 @@ __decorate([
 ], DatepickerControl.prototype, "useTime", void 0);
 __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", Object)
+], DatepickerControl.prototype, "minDate", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", String)
 ], DatepickerControl.prototype, "classDate", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", String)
+], DatepickerControl.prototype, "formatDate", void 0);
 DatepickerControl = DatepickerControl_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'datepicker',
         providers: [{ provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* NG_VALUE_ACCESSOR */], useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["forwardRef"])(function () { return DatepickerControl_1; }), multi: true }],
         template: __webpack_require__(840)
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_common__["d" /* DatePipe */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgZone"]) === "function" && _c || Object])
 ], DatepickerControl);
 
-var DatepickerControl_1, _a, _b;
+var DatepickerControl_1, _a, _b, _c;
 //# sourceMappingURL=F:/Projects/Website/CapitalManagement/src/datepicker.control.js.map
 
 /***/ }),
@@ -4996,7 +5018,7 @@ module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 co
 /***/ 829:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n        <loading [loading]=\"loading\">\r\n            <form [formGroup]=\"addOrEditForm\" (ngSubmit)=\"onSubmitCustom($event)\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header\">\r\n                        <strong>{{ entityId != null ? 'Cập Nhật Thông Tin Thành Viên' : 'Thêm Mới Thông Tin Thành Viên'}}</strong>\r\n                        <button class=\"btn btn-default pull-right\" type=\"button\" (click)=\"onCancel()\">Hủy Bỏ</button>\r\n                        <button class=\"btn btn-primary pull-right\" type=\"submit\" [disabled]=\"!addOrEditForm.valid\">Lưu</button>\r\n                    </div>\r\n                    <div class=\"card-block\">\r\n\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"form-group\">\r\n                                    <label for=\"name\">Họ & Tên</label>\r\n                                    <input type=\"text\" class=\"form-control\" id=\"name\" formControlName=\"Name\" [(ngModel)]=\"entity.Name\">\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"email\">Email</label>\r\n                                <input type=\"email\" class=\"form-control\" id=\"email\" formControlName=\"Email\" [(ngModel)]=\"entity.Email\">\r\n                            </div>\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"phone\">Điện Thoại</label>\r\n                                <input type=\"text\" class=\"form-control\" id=\"phone\" formControlName=\"Phone\" [(ngModel)]=\"entity.Phone\">\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"form-group\">\r\n                                    <label for=\"name\">Địa Chỉ</label>\r\n                                    <input type=\"text\" class=\"form-control\" id=\"name\" formControlName=\"Address\" [(ngModel)]=\"entity.Address\">\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"original-amount\">Tiền Khởi Đầu</label>\r\n                                <input type=\"number\" class=\"form-control\" id=\"original-amount\" formControlName=\"OriginalAmount\" [(ngModel)]=\"entity.OriginalAmount\">\r\n                            </div>\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"refund-amount\">Tiền Hoàn Trả</label>\r\n                                <input type=\"number\" class=\"form-control\" id=\"refund-amount\" formControlName=\"RefundAmount\" [(ngModel)]=\"entity.RefundAmount\">\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </loading>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-sm-12 col-lg-12 col-xl-12\">\r\n        <loading [loading]=\"loading\">\r\n            <form [formGroup]=\"addOrEditForm\" (ngSubmit)=\"onSubmitCustom($event)\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header\">\r\n                        <strong>{{ entityId != null ? 'Cập Nhật Thông Tin Thành Viên' : 'Thêm Mới Thông Tin Thành Viên'}}</strong>\r\n                        <button class=\"btn btn-default pull-right\" type=\"button\" (click)=\"onCancel()\">Hủy Bỏ</button>\r\n                        <button class=\"btn btn-primary pull-right\" type=\"submit\" [disabled]=\"!addOrEditForm.valid\">Lưu</button>\r\n                    </div>\r\n                    <div class=\"card-block\">\r\n                        <div class=\"row\">\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"name\">Họ & Tên</label>\r\n                                <input type=\"text\" class=\"form-control\" id=\"name\" formControlName=\"Name\" [(ngModel)]=\"entity.Name\">\r\n                            </div>\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"name\">Ngày tạo</label>\r\n                                <datepicker formControlName=\"CreateDate\" [(ngModel)]=\"entity.CreateDate\"></datepicker>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"email\">Email</label>\r\n                                <input type=\"email\" class=\"form-control\" id=\"email\" formControlName=\"Email\" [(ngModel)]=\"entity.Email\">\r\n                            </div>\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"phone\">Điện Thoại</label>\r\n                                <input type=\"text\" class=\"form-control\" id=\"phone\" formControlName=\"Phone\" [(ngModel)]=\"entity.Phone\">\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"col-lg-12\">\r\n                                <div class=\"form-group\">\r\n                                    <label for=\"name\">Địa Chỉ</label>\r\n                                    <input type=\"text\" class=\"form-control\" id=\"name\" formControlName=\"Address\" [(ngModel)]=\"entity.Address\">\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"row\">\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"original-amount\">Tiền Khởi Đầu</label>\r\n                                <input type=\"number\" class=\"form-control\" id=\"original-amount\" formControlName=\"OriginalAmount\" [(ngModel)]=\"entity.OriginalAmount\">\r\n                            </div>\r\n                            <div class=\"form-group col-sm-6 col-lg-6\">\r\n                                <label for=\"refund-amount\">Tiền Hoàn Trả</label>\r\n                                <input type=\"number\" class=\"form-control\" id=\"refund-amount\" formControlName=\"RefundAmount\" [(ngModel)]=\"entity.RefundAmount\"\r\n                                    readonly>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </form>\r\n        </loading>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -5073,7 +5095,7 @@ module.exports = "<template ngFor let-breadcrumb [ngForOf]=\"breadcrumbs\" let-l
 /***/ 840:
 /***/ (function(module, exports) {
 
-module.exports = "<fieldset>\r\n    <div class=\"control-group\">\r\n        <div class=\"controls\">\r\n            <div class=\"col-md-11 xdisplay_inputx form-group has-feedback\">\r\n                <input type=\"text\" class=\"form-control has-feedback-left\" \r\n                [id]=\"id\" placeholder=\"{{placeholder}}\" aria-describedby=\"inputSuccess2Status3\">\r\n                <span class=\"fa fa-calendar-o form-control-feedback left\" aria-hidden=\"true\"></span>\r\n                <span id=\"inputSuccess2Status3\" class=\"sr-only\">(success)</span>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</fieldset>"
+module.exports = "<div class=\"input-group date\">\r\n    <span class=\"input-group-addon\"><i class=\"fa fa-calendar\"></i></span>\r\n    <input [id]=\"id\" placeholder=\"{{placeholder}}\" type=\"text\" class=\"form-control date-picker\" data-date-format=\"dd/mm/yyyy\"/>\r\n</div>"
 
 /***/ }),
 
